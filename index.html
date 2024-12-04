@@ -8,18 +8,18 @@
 </head>
 <body>
     <div class="container">
-        <div class="chat-container">
-            <h2>Чат с ботом</h2>
-            <div class="chat-history" id="chat-history">
-                <!-- Здесь будет история чата -->
-            </div>
-            <div class="chat-input">
-                <input type="text" id="chat-input" placeholder="Введите ваше сообщение...">
-                <button id="send-button">Отправить</button>
-            </div>
-        </div>
+      <div class="left-side">
+          <div class="news-container">
+              <h2>Новости ЧелГУ</h2>
+              <ul class="news-list">
 
-        <div class="right-side">
+                <!-- Здесь будут еще новости -->
+
+              </ul>
+          </div>
+      </div>
+
+      <div class="right-side">
             <div class="search-container">
                 <h2>Поиск</h2>
                 <input type="text" id="search-input" placeholder="Поиск по ЧелГУ...">
@@ -29,14 +29,18 @@
                 </div>
             </div>
 
-            <div class="news-container">
-                <h2>Новости ЧелГУ</h2>
-                <ul class="news-list">
-                     <!-- Здесь будут новости -->
-
-                </ul>
+          <div class="chat-container">
+            <h2>Чат с ботом</h2>
+            <div class="chat-history" id="chat-history">
+                <!-- Здесь будет история чата -->
             </div>
+            <div class="chat-input">
+                <input type="text" id="chat-input" placeholder="Введите ваше сообщение...">
+                <button id="send-button">Отправить</button>
+            </div>
+         </div>
         </div>
+
     </div>
 
     <script src="/static/script.js"></script>

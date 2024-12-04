@@ -1,0 +1,21 @@
+{
+    "query": {
+      "searchType": "SEARCH_TYPE_RU",
+      "queryText": "Chelgy",
+      "familyMode": "FAMILY_MODE_NONE",
+      "page": "0"
+    },
+    "sortSpec": {
+      "sortMode": "SORT_MODE_BY_RELEVANCE",
+      "sortOrder": "SORT_ORDER_DESC"
+    },
+    "groupSpec": {
+      "groupMode": "GROUP_MODE_DEEP",
+      "groupsOnPage": "5",
+      "docsInGroup": "1"
+    },
+    "maxPassages": "1",
+    "region": "56",
+    "l10N": "LOCALIZATION_RU ",
+    "folderId": "b1gkt9gihidtbvm78blg"
+}

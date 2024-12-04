@@ -10,20 +10,28 @@ body {
     height: 100vh;
 }
 
-.chat-container {
-    width: 60%;
-    padding: 20px;
-    background-color: #fff;
-    border-right: 1px solid #ccc;
-    display: flex;
-    flex-direction: column;
-}
-
-.right-side {
+.left-side {
     width: 40%;
     display: flex;
     flex-direction: column;
     padding: 20px;
+    overflow-y: auto;
+}
+
+.right-side {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.chat-container {
+    background-color: #fff;
+    padding: 20px;
+    border-top: 1px solid #ccc;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
 }
 
 .search-container {
@@ -37,6 +45,8 @@ body {
     background-color: #fff;
     padding: 20px;
     flex-grow: 1;
+    max-height: 100vh; /* Ограничение высоты */
+    overflow-y: auto; /* Добавление скролла */
 }
 
 h2 {
@@ -79,9 +89,9 @@ button:hover {
 
 .search-results {
     margin-top: 20px;
-    padding: 10px; /* Добавим отступы для результатов поиска */
+    padding: 10px;
     border: 1px solid #ccc;
-    min-height: 100px; /* Зададим минимальную высоту для контейнера поиска */
+    min-height: 100px;
 }
 
 .search-results ul {
@@ -98,7 +108,49 @@ button:hover {
     padding: 0;
 }
 
-.news-list li {
-    padding: 10px 0;
-    border-bottom: 1px solid #eee;
+.news-container {
+    background-color: #f8f9fa;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.news-item {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 10px;
+}
+
+.news-image {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-right: 20px;
+}
+
+.news-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.news-container {
+    padding: 5px 5px 5px 10px;
+}
+
+.news-title {
+    font-weight: bold;
+    padding: 0;
+}
+
+.news-text {
+    padding: 5px;
+}
+
+.news-description {
+    color: #777;
+    margin-top: 10px;
 }
