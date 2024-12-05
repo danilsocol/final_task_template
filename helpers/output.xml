@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<yandexsearch version="1.0">
+<request>
+<query>Chelgy</query>
+<page>0</page>
+<sortby order="descending" priority="no">rlv</sortby>
+<maxpassages>1</maxpassages>
+<groupings>
+<groupby attr="d" mode="deep" groups-on-page="5" docs-in-group="1" curcateg="-1"/>
+</groupings>
+</request>
+<response date="20241205T112635">
+<reqid>1733397995516547-4811855336449201494-balancer-l7leveler-kubr-yp-vla-39-BAL</reqid>
+<found priority="phrase">762</found>
+<found priority="strict">762</found>
+<found priority="all">762</found>
+<found-human>Нашлось 762 ответа</found-human>
+<is-local>no</is-local>
+<results>
+<grouping attr="d" mode="deep" groups-on-page="5" docs-in-group="1" curcateg="-1">
+<page first="1" last="5">0</page>
+<group>
+<categ attr="d" name="UngroupVital61.ru"/>
+<doccount>3</doccount>
+<relevance priority="all"/>
+<doc id="Z36D684104449CF51">
+<relevance priority="all"/>
+<saved-copy-url>https://yandexwebcache.net/yandbtm?fmode=inject&amp;tm=1733397995&amp;tld=ru&amp;lang=ru&amp;la=1732851840&amp;text=Chelgy&amp;url=https%3A//www.csu.ru/&amp;l10n=ru&amp;mime=html&amp;sign=3b03176f07254bfeb4ea107a904d02dd&amp;keyno=0</saved-copy-url>
+<url>https://www.csu.ru/</url>
+<domain>www.csu.ru</domain>
+<title>Челябинский государственный университет (ЧелГУ)</title>
+<headline>Официальный сайт Челябинского государственного университета.</headline>
+<modtime>20080309T030000</modtime>
+<size>7420</size>
+<charset>utf-8</charset>
+<mime-type>text/html</mime-type>
+<properties>
+<_PassagesType>0</_PassagesType>
+<lang>ru</lang>
+</properties>
+</doc>
+</group>
+<group>
+<categ attr="d" name="UngroupVital60.ru"/>
+<doccount>3</doccount>
+<relevance priority="all"/>
+<doc id="Z59304C9FD7ABEC16">
+<relevance priority="all"/>
+<saved-copy-url>https://yandexwebcache.net/yandbtm?fmode=inject&amp;tm=1733397995&amp;tld=ru&amp;lang=ru&amp;la=1732852224&amp;text=Chelgy&amp;url=https%3A//moodle.uio.csu.ru/&amp;l10n=ru&amp;mime=html&amp;sign=c7746de6d9c7fe87e967240d6b8423ab&amp;keyno=0</saved-copy-url>
+<url>https://moodle.uio.csu.ru/</url>
+<domain>moodle.uio.csu.ru</domain>
+<title>В начало | ЧелГУ</title>
+<headline>Этот сайт создан для демонстрации возможностей системы &quot;Moodle&quot; и тренировки...</headline>
+<modtime>20130731T042411</modtime>
+<size>753</size>
+<charset>utf-8</charset>
+<mime-type>text/html</mime-type>
+<properties>
+<_PassagesType>0</_PassagesType>
+<lang>ru</lang>
+</properties>
+</doc>
+</group>
+<group>
+<categ attr="d" name="vk.com"/>
+<doccount>300</doccount>
+<relevance priority="all"/>
+<doc id="Z1F847E6807A6E000">
+<relevance priority="all"/>
+<saved-copy-url>https://yandexwebcache.net/yandbtm?fmode=inject&amp;tm=1733397995&amp;tld=ru&amp;lang=ru&amp;la=1732724736&amp;text=Chelgy&amp;url=https%3A//vk.com/csu_cts&amp;l10n=ru&amp;mime=html&amp;sign=a3859e89dfffaddf06e98d94cabb7c33&amp;keyno=0</saved-copy-url>
+<url>https://vk.com/csu_cts</url>
+<domain>vk.com</domain>
+<title>Центр творчества студентов ЧелГУ | ЦТС ЧелГУ | Творческое...</title>
+<modtime>20160411T212843</modtime>
+<size>3566</size>
+<charset>windows-1251</charset>
+<mime-type>text/html</mime-type>
+<passages>
+<passage>Творческое объединение Челябинского государственного университета.</passage>
+</passages>
+<properties>
+<_PassagesType>0</_PassagesType>
+<lang>ru</lang>
+</properties>
+</doc>
+</group>
+<group>
+<categ attr="d" name="bytemag.ru"/>
+<doccount>4</doccount>
+<relevance priority="all"/>
+<doc id="Z6642D77DE36308EC">
+<relevance priority="all"/>
+<saved-copy-url>https://yandexwebcache.net/yandbtm?fmode=inject&amp;tm=1733397995&amp;tld=ru&amp;lang=ru&amp;la=1732454656&amp;text=Chelgy&amp;url=https%3A//bytemag.ru/chelgy-ii-laboratoriiya-kasperskogo-prodoljaut-sotrydniichest-3898/&amp;l10n=ru&amp;mime=html&amp;sign=57a585e6b6b8d98066ff9492e148ccdc&amp;keyno=0</saved-copy-url>
+<url>https://bytemag.ru/chelgy-ii-laboratoriiya-kasperskogo-prodoljaut-sotrydniichest-3898/</url>
+<domain>bytemag.ru</domain>
+<title>ЧелГУ и «Лаборатория Касперского» продолжают сотрудничество...</title>
+<headline>Челябинский государственный университет продлил действие более 2 тыс...</headline>
+<modtime>20160916T103202</modtime>
+<size>1975</size>
+<charset>utf-8</charset>
+<mime-type>text/html</mime-type>
+<properties>
+<_PassagesType>0</_PassagesType>
+<lang>ru</lang>
+</properties>
+</doc>
+</group>
+<group>
+<categ attr="d" name="chel-edu.ru"/>
+<doccount>1</doccount>
+<relevance priority="all"/>
+<doc id="Z226BA7D2F723CE88">
+<relevance priority="all"/>
+<saved-copy-url>https://yandexwebcache.net/yandbtm?fmode=inject&amp;tm=1733397995&amp;tld=ru&amp;lang=ru&amp;la=1732787200&amp;text=Chelgy&amp;url=https%3A//www.chel-edu.ru/parents/centr_chelgy/&amp;l10n=ru&amp;mime=html&amp;sign=ab2ac2c15b246b3f120586de282b2c80&amp;keyno=0</saved-copy-url>
+<url>https://www.chel-edu.ru/parents/centr_chelgy/</url>
+<domain>www.chel-edu.ru</domain>
+<title>Комитет по делам образования города Челябинска Центр...</title>
+<headline>Не убран снег, яма на дороге, не горит фонарь? Столкнулись с проблемой...</headline>
+<modtime>20230713T092308</modtime>
+<size>484</size>
+<charset>windows-1251</charset>
+<mime-type>text/html</mime-type>
+<properties>
+<_PassagesType>0</_PassagesType>
+<lang>ru</lang>
+</properties>
+</doc>
+</group>
+<found priority="phrase">200</found>
+<found priority="strict">200</found>
+<found priority="all">200</found>
+<found-docs priority="phrase">762</found-docs>
+<found-docs priority="strict">762</found-docs>
+<found-docs priority="all">762</found-docs>
+<found-docs-human>нашёл 762 ответа</found-docs-human>
+</grouping>
+</results>
+</response>
+</yandexsearch>

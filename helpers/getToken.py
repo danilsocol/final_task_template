@@ -94,19 +94,16 @@ while True:
 
     if responseReq:
         raw_data = responseReq.get('rawData')
-        # Кодирование rawData в Base64
-        encoded_data = base64.b64encode(raw_data).decode()
+        decoded_bytes = base64.b64decode(raw_data)
+        decoded_string = decoded_bytes.decode('utf-8')  # Декодируем в строку
+        print(decoded_string)  # Вывод: Hello, world!
 
-        # Создание XML-документа
-        root = ET.Element("data")
-        data_element = ET.SubElement(root, "rawData")
-        data_element.text = encoded_data
 
-        # Запись XML-документа в файл
-        tree = ET.ElementTree(root)
-        tree.write("raw_data.xml", encoding='utf-8', xml_declaration=True)
+        with open('output.xml', 'w', encoding='utf-8') as file:
+            file.write(decoded_string)
 
-        print(f'Raw data успешно записана в файл raw_data.xml')
+        break
+
     else:
         print(f'rawData не найдена в ответе')
 
