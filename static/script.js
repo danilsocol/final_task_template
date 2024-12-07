@@ -71,7 +71,6 @@ function addMessage(sender, message) {
     chatHistory.scrollTop = chatHistory.scrollHeight; // Прокручиваем вниз
 }
 
-// Добавляем функциональность для кнопки "Искать" (заглушка)
 const searchButton = document.getElementById('search-button');
 const searchInput = document.getElementById('search-input');
 const searchResultsDiv = document.getElementById('search-results');
@@ -79,21 +78,29 @@ const searchResultsDiv = document.getElementById('search-results');
 searchButton.addEventListener('click', async () => {
     const query = searchInput.value;
 
-    // Заглушка для результатов поиска
-    const mockResults = [
-        'https://www.chelsu.ru/page-1',
-        'https://www.chelsu.ru/page-2',
-        'https://www.chelsu.ru/page-3',
-        'https://www.chelsu.ru/page-4',
-        'https://www.chelsu.ru/page-5',
-    ];
+    // Отправляем запрос на бэкэнд
+    try {
+        const response = await fetch(`/search?query=${encodeURIComponent(query)}`);
+        if (!response.ok) {
+            throw new Error('Ошибка сети');
+        }
 
-    // Отображаем результаты в блоке searchResultsDiv
-    let resultsHTML = '<ul>';
-    mockResults.forEach(result => {
-        resultsHTML += `<li><a href="${result}" target="_blank">${result}</a></li>`;
-    });
-    resultsHTML += '</ul>';
+        const results = await response.json();
 
-    searchResultsDiv.innerHTML = resultsHTML;
+        // Отображаем результаты в блоке searchResultsDiv
+             let resultsHTML = '';
+        results.forEach(result => {
+            resultsHTML += `
+                <div class="result-item">
+                    <a href="${result.url}" target="_blank">${result.title}</a>
+                    ${result.headline ? `<p class="headline">${result.headline}</p>` : ''}
+                </div>
+            `;
+        });
+
+        searchResultsDiv.innerHTML = resultsHTML || '<p>Ничего не найдено.</p>';
+    } catch (error) {
+        console.error('Ошибка при получении результатов поиска:', error);
+        searchResultsDiv.innerHTML = '<p>Произошла ошибка при получении результатов поиска.</p>';
+    }
 });

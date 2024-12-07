@@ -32,6 +32,7 @@ body {
     display: flex;
     flex-direction: column;
     flex-grow: 1;
+    max-height: 44vh;
 }
 
 .search-container {
@@ -39,14 +40,15 @@ body {
     padding: 20px;
     margin-bottom: 20px;
     border-bottom: 1px solid #ccc;
+    height: 44vh;
 }
 
 .news-container {
     background-color: #fff;
     padding: 20px;
     flex-grow: 1;
-    max-height: 100vh; /* Ограничение высоты */
-    overflow-y: auto; /* Добавление скролла */
+    max-height: 100vh;
+    overflow-y: auto; /
 }
 
 h2 {
@@ -91,7 +93,8 @@ button:hover {
     margin-top: 20px;
     padding: 10px;
     border: 1px solid #ccc;
-    min-height: 100px;
+    height: 25vh;
+    overflow-y: auto;
 }
 
 .search-results ul {
@@ -153,4 +156,30 @@ button:hover {
 .news-description {
     color: #777;
     margin-top: 10px;
+}
+
+
+
+.result-item {
+    border-bottom: 1px solid #eee;
+    padding: 10px 0;
+}
+
+.result-item:last-child {
+    border-bottom: none;
+}
+
+.result-item a {
+    text-decoration: none;
+    color: #007bff;
+    font-size: 18px;
+}
+
+.result-item a:hover {
+    text-decoration: underline;
+}
+
+.headline {
+    font-size: 14px;
+    color: #555;
 }

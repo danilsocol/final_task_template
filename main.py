@@ -1,11 +1,15 @@
-from fastapi import FastAPI, Request
+from http.client import HTTPException
+
+from fastapi import FastAPI, Request, requests, Query
 from fastapi.responses import HTMLResponse
 from fastapi.staticfiles import StaticFiles
 from pydantic import BaseModel
 from typing import Dict, List
 from datetime import datetime
 
+from helpers.researchAPIv1 import fetch_yandex_search_results, parse_xml_data
 from models.news_item import NewsItem
+from models.search import SearchResult, SearchRequest
 
 app = FastAPI()
 
@@ -78,6 +82,14 @@ async def get_news():
     return news_list
 
 
+@app.get("/search", response_model=list[SearchResult])
+async def search(query: str = Query(...)):
+    try:
+        xml = fetch_yandex_search_results(query)
+        results = parse_xml_data(xml)
+        return results
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=f"Произошла непредвиденная ошибка: {str(e)}")
 
 @app.get("/")
 def index():
