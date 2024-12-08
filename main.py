@@ -2,6 +2,8 @@ import json
 import os
 from http.client import HTTPException
 import argparse
+import asyncio
+from concurrent.futures import ThreadPoolExecutor
 
 from fastapi import FastAPI, Request, requests, Query
 from fastapi.responses import HTMLResponse
@@ -74,15 +76,21 @@ def index():
 if __name__ == "__main__":
     args = parse_arguments()
     
-    if args.parse:
-        print(f"Запуск парсера новостей (страниц: {args.pages})...")
-        parser = NewsParser(max_pages=args.pages)
-        try:
-            parser.parse_news()
-        except Exception as e:
-            print(f"Ошибка при парсинге: {str(e)}")
-        finally:
-            parser.driver.quit()
+    def run_parser():
+        if args.parse:
+            print(f"Запуск парсера новостей (страниц: {args.pages})...")
+            parser = NewsParser(max_pages=args.pages)
+            try:
+                parser.parse_news()
+            except Exception as e:
+                print(f"Ошибка при парсинге: {str(e)}")
+            finally:
+                parser.driver.quit()
     
-    import uvicorn
-    uvicorn.run(app, host="0.0.0.0", port=8000)
+    # Запускаем парсер в отдельном потоке
+    with ThreadPoolExecutor() as executor:
+        parser_future = executor.submit(run_parser)
+        
+        # Запускаем FastAPI сервер в основном потоке
+        import uvicorn
+        uvicorn.run(app, host="0.0.0.0", port=8000)

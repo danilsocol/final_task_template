@@ -1,3 +1,5 @@
+# -*- coding: utf-8 -*-
+
 from selenium.webdriver.chrome.options import Options
 
 class BrowserConfig:
