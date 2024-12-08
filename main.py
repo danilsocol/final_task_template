@@ -1,4 +1,7 @@
+import json
+import os
 from http.client import HTTPException
+import argparse
 
 from fastapi import FastAPI, Request, requests, Query
 from fastapi.responses import HTMLResponse
@@ -10,77 +13,50 @@ from datetime import datetime
 from helpers.researchAPIv1 import fetch_yandex_search_results, parse_xml_data
 from models.news_item import NewsItem
 from models.search import SearchResult, SearchRequest
+from parser.news_parser import NewsParser
+
+def load_news_data():
+    try:
+        with open('data/news_data.json', 'r', encoding='utf-8') as f:
+            return json.load(f)
+    except FileNotFoundError:
+        return []
+
+def parse_arguments():
+    parser = argparse.ArgumentParser(description='Запуск FastAPI сервера с опцией парсинга новостей')
+    parser.add_argument('--parse', action='store_true', help='Запустить парсер новостей при старте, автозапуск парсинга 5 первых страниц за 2024 год')
+    parser.add_argument('--pages', type=str, 
+                       default='5', 
+                       help='Количество страниц для парсинга (по умолчанию 5), None для бесконечного парсинга')    
+    args = parser.parse_args()
+    
+    if args.pages.lower() == 'none':
+        args.pages = None
+    else:
+        try:
+            args.pages = int(args.pages)
+        except ValueError:
+            raise ValueError("Значение --pages должно быть числом или 'None'")
+    
+    return args
 
 app = FastAPI()
 
 app.mount("/static", StaticFiles(directory="static"), name="static")
 
-# Данные новостей
-data = {
-    'Студентка журфака ЧелГУ — в тройке лучших спортивных журналистов страны': {
-        'date': '03.12.2024',
-        'relate_image_link': 'https://www.csu.ru/PublishingImages/news/news/akimova.jpg',
-        'description': 'В будущем, когда Тимур все сделает здесь будет много текста'
-    },
-    'Психологи ЧелГУ создали биопсихосоциальную модель здоровья лиц, перенёсших COVID-19': {
-        'date': '03.12.2024',
-        'relate_image_link': 'https://www.csu.ru/PublishingImages/news/news/psihologi0312.jpg',
-        'description': 'В будущем, когда Тимур все сделает здесь будет много текста'
-    },
-    'Спортсменов ЧелГУ наградили на ежегодном празднике «Звёзды студенческого спорта»': {
-        'date': '03.12.2024',
-        'relate_image_link': 'https://www.csu.ru/PublishingImages/news/news/sport0312.jpg',
-        'description': 'В будущем, когда Тимур все сделает здесь будет много текста'
-    },
-    'Учёные из Китая стали участниками семинара по передовому материаловедению в ЧелГУ': {
-        'date': '02.12.2024',
-        'relate_image_link': 'https://www.csu.ru/PublishingImages/news/news/kitay02121.jpg',
-        'description': 'В будущем, когда Тимур все сделает здесь будет много текста'
-    },
-    'Учёные ЧелГУ выступили на XV Гороховских чтениях': {
-        'date': '02.12.2024',
-        'relate_image_link': 'https://www.csu.ru/PublishingImages/news/news/gorohovskiechteniya.jpg',
-        'description': 'В будущем, когда Тимур все сделает здесь будет много текста'
-    },
-    'Студенты ЧелГУ провели квиз для фанатов фильмов, сериалов, видеоигр': {
-        'date': '02.12.2024',
-        'relate_image_link': 'https://www.csu.ru/PublishingImages/news/news/fankviz02121.jpg',
-        'description': 'В будущем, когда Тимур все сделает здесь будет много текста'
-    },
-    'Юбилей празднует директор института экономики отраслей, бизнеса и администрирования Юнер Капкаев': {
-        'date': '30.11.2024',
-        'relate_image_link': 'https://www.csu.ru/PublishingImages/news/news/kapkaev3011.jpg',
-        'description': 'В будущем, когда Тимур все сделает здесь будет много текста'
-    },
-    'Учёные ЧелГУ под эгидой Уральского НОЦ работают с предприятиями региона': {
-        'date': '29.11.2024',
-        'relate_image_link': 'https://www.csu.ru/PublishingImages/news/news/nots2911.jpg',
-        'description': 'В будущем, когда Тимур все сделает здесь будет много текста'
-    },
-    'В ЧелГУ написали географический диктант': {
-        'date': '29.11.2024',
-        'relate_image_link': 'https://www.csu.ru/PublishingImages/news/news/diktantgeo.jpg',
-        'description': 'В будущем, когда Тимур все сделает здесь будет много текста'
-    },
-    'Студентка ЧелГУ — бронзовый призёр соревнований по конькобежному спорту': {
-        'date': '29.11.2024',
-        'relate_image_link': 'https://www.csu.ru/PublishingImages/news/news/sapegina.jpg',
-        'description': 'В будущем, когда Тимур все сделает здесь будет много текста'
-    }
-}
-
 @app.get("/api/news", response_model=List[NewsItem])
 async def get_news():
+    news_data = load_news_data()
     news_list = []
-    for title, details in data.items():
+    
+    for item in news_data:
         news_list.append(NewsItem(
-            title=title,
-            date=details['date'],
-            relate_image_link=details['relate_image_link'],
-            description=details['description']
+            title=item['title'],
+            date=item['date'],
+            relate_image_link=item['relate_image'],
+            description=item.get('content', 'Описание отсутствует')
         ))
     return news_list
-
 
 @app.get("/search", response_model=list[SearchResult])
 async def search(query: str = Query(...)):
@@ -94,3 +70,19 @@ async def search(query: str = Query(...)):
 @app.get("/")
 def index():
     return HTMLResponse(content=open("index.html", "r", encoding="utf-8").read())
+
+if __name__ == "__main__":
+    args = parse_arguments()
+    
+    if args.parse:
+        print(f"Запуск парсера новостей (страниц: {args.pages})...")
+        parser = NewsParser(max_pages=args.pages)
+        try:
+            parser.parse_news()
+        except Exception as e:
+            print(f"Ошибка при парсинге: {str(e)}")
+        finally:
+            parser.driver.quit()
+    
+    import uvicorn
+    uvicorn.run(app, host="0.0.0.0", port=8000)
