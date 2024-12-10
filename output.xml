@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <yandexsearch version="1.0">
 <request>
-<query>fdsfs</query>
+<query>авы</query>
 <page>0</page>
 <sortby order="descending" priority="no">rlv</sortby>
 <maxpassages>1</maxpassages>
@@ -9,140 +9,30 @@
 <groupby attr="" mode="flat" groups-on-page="10" docs-in-group="1" curcateg="-1"/>
 </groupings>
 </request>
-<response date="20241208T173352">
-<reqid>1733679232549497-4421393172625682780-balancer-l7leveler-kubr-yp-klg-318-BAL</reqid>
-<found priority="phrase">2438</found>
-<found priority="strict">2438</found>
-<found priority="all">2438</found>
-<found-human>Нашлось 2 тыс. ответов</found-human>
+<response date="20241210T074919">
+<reqid>1733816959201632-18397718737972811676-balancer-l7leveler-kubr-yp-klg-42-BAL</reqid>
+<found priority="phrase">205181</found>
+<found priority="strict">205181</found>
+<found priority="all">205181</found>
+<found-human>Нашлось 205 тыс. ответов</found-human>
 <results>
 <grouping attr="" mode="flat" groups-on-page="10" docs-in-group="1" curcateg="-1">
 <page first="1" last="10">0</page>
 <group>
 <doccount>1</doccount>
 <relevance priority="all"/>
-<doc id="ZF01A5AE50DD255B8">
+<doc touchdown="РКН: сайт нарушает закон РФ" id="Z6A7B39CACECBEDC0">
 <relevance priority="all"/>
-<saved-copy-url>https://yandexwebcache.net/yandbtm?fmode=inject&amp;tm=1733679232&amp;tld=ru&amp;lang=en&amp;la=1732967936&amp;text=fdsfs&amp;url=https%3A//acronym24.com/fdsfs-meaning/&amp;l10n=ru&amp;mime=html&amp;sign=35a93601dae35f7e234a69b6d77ae208&amp;keyno=0</saved-copy-url>
-<url>https://acronym24.com/fdsfs-meaning/</url>
-<domain>acronym24.com</domain>
-<title><hlword>FDSFS</hlword> Meaning - What does <hlword>FDSFS</hlword> stand for?</title>
-<modtime>20211029T175157</modtime>
-<size>288</size>
+<saved-copy-url>https://yandexwebcache.net/yandbtm?fmode=inject&amp;tm=1733816959&amp;tld=ru&amp;lang=ru&amp;la=1733111808&amp;text=%D0%B0%D0%B2%D1%8B&amp;url=https%3A//ru.pinterest.com/ideas/%25D1%2587%25D1%2582%25D0%25BE-%25D1%2582%25D0%25BE-%25D0%25BD%25D0%25B0-%25D0%25B0%25D0%25B2%25D1%2583/896766202852/&amp;l10n=ru&amp;mime=html&amp;sign=80fd3f03bb527a3c9f0507d1d4ce92d2&amp;keyno=0</saved-copy-url>
+<url>https://ru.pinterest.com/ideas/%D1%87%D1%82%D0%BE-%D1%82%D0%BE-%D0%BD%D0%B0-%D0%B0%D0%B2%D1%83/896766202852/</url>
+<domain>ru.pinterest.com</domain>
+<title>Что То На <hlword>Аву</hlword></title>
+<modtime>20231031T053447</modtime>
+<size>1163</size>
 <charset>utf-8</charset>
 <mime-type>text/html</mime-type>
 <passages>
-<passage>The <hlword>FDSFS</hlword> meaning is &quot;Forceful Decisive Self-Possessed Fashionable Strong-Minded&quot;.</passage>
-</passages>
-<properties>
-<_PassagesType>0</_PassagesType>
-<lang>en</lang>
-</properties>
-</doc>
-</group>
-<group>
-<doccount>1</doccount>
-<relevance priority="all"/>
-<doc id="ZD512A247A5BEEF33">
-<relevance priority="all"/>
-<saved-copy-url>https://yandexwebcache.net/yandbtm?fmode=inject&amp;tm=1733679232&amp;tld=ru&amp;lang=en&amp;la=1731611136&amp;text=fdsfs&amp;url=https%3A//www.allacronyms.com/FDSFS/First_Derivative_Synchronous_Fluorescence_Spectra&amp;l10n=ru&amp;mime=html&amp;sign=2d66688838ba4836afba6411ea5d1f05&amp;keyno=0</saved-copy-url>
-<url>https://www.allacronyms.com/FDSFS/First_Derivative_Synchronous_Fluorescence_Spectra</url>
-<domain>www.allacronyms.com</domain>
-<title><hlword>FDSFS</hlword> First Derivative Synchronous Fluorescence Spectra</title>
-<modtime>20200613T004917</modtime>
-<size>1007</size>
-<charset>utf-8</charset>
-<mime-type>text/html</mime-type>
-<passages>
-<passage><hlword>FDSFS</hlword> is a shorter form of First Derivative Synchronous Fluorescence Spectra.</passage>
-</passages>
-<properties>
-<_PassagesType>0</_PassagesType>
-<lang>en</lang>
-</properties>
-</doc>
-</group>
-<group>
-<doccount>1</doccount>
-<relevance priority="all"/>
-<doc id="Z06D1FD77EF7C598B">
-<relevance priority="all"/>
-<saved-copy-url>https://yandexwebcache.net/yandbtm?fmode=inject&amp;tm=1733679232&amp;tld=ru&amp;lang=en&amp;la=1731495168&amp;text=fdsfs&amp;url=https%3A//codesandbox.io/p/sandbox/fdsfs-gj8lr7&amp;l10n=ru&amp;mime=html&amp;sign=550f518e1c95bfe68e022d22808715e5&amp;keyno=0</saved-copy-url>
-<url>https://codesandbox.io/p/sandbox/fdsfs-gj8lr7</url>
-<domain>codesandbox.io</domain>
-<title><hlword>Fdsfs</hlword> - Codesandbox</title>
-<modtime>20230217T191027</modtime>
-<size>213</size>
-<charset>utf-8</charset>
-<mime-type>text/html</mime-type>
-<passages>
-<passage>Explore this online <hlword>fdsfs</hlword> sandbox and experiment with it yourself using our interactive...</passage>
-</passages>
-<properties>
-<_PassagesType>0</_PassagesType>
-<lang>en</lang>
-</properties>
-</doc>
-</group>
-<group>
-<doccount>1</doccount>
-<relevance priority="all"/>
-<doc id="Z29FBFE15821CAD21">
-<relevance priority="all"/>
-<saved-copy-url>https://yandexwebcache.net/yandbtm?fmode=inject&amp;tm=1733679232&amp;tld=ru&amp;lang=en&amp;la=1732481024&amp;text=fdsfs&amp;url=https%3A//tracklock.gg/players/1034952985&amp;l10n=ru&amp;mime=html&amp;sign=acfea911c90289ea249a19609491100f&amp;keyno=0</saved-copy-url>
-<url>https://tracklock.gg/players/1034952985</url>
-<domain>tracklock.gg</domain>
-<title><hlword>Fdsfs</hlword> - tracklock.gg - tracklock.gg - Deadlock Stats</title>
-<modtime>20241111T225045</modtime>
-<size>1409</size>
-<charset>utf-8</charset>
-<mime-type>text/html</mime-type>
-<passages>
-<passage><hlword>fdsfs</hlword> player profile for valves new game Deadlock.</passage>
-</passages>
-<properties>
-<_PassagesType>0</_PassagesType>
-<lang>en</lang>
-</properties>
-</doc>
-</group>
-<group>
-<doccount>1</doccount>
-<relevance priority="all"/>
-<doc id="ZB0F9C7B4DCDCDAF5">
-<relevance priority="all"/>
-<saved-copy-url>https://yandexwebcache.net/yandbtm?fmode=inject&amp;tm=1733679232&amp;tld=ru&amp;lang=de&amp;la=1728170368&amp;text=fdsfs&amp;url=https%3A//www.pinterest.de/rape43me/fdsfs/&amp;l10n=ru&amp;mime=html&amp;sign=2f39f7b0099b7bce226e4b09e19a48ad&amp;keyno=0</saved-copy-url>
-<url>https://www.pinterest.de/rape43me/fdsfs/</url>
-<domain>www.pinterest.de</domain>
-<title>Идеи на тему «<hlword>Fdsfs</hlword>» (22) в 2024 г | фигурное катание, позы тела...</title>
-<modtime>20240529T000518</modtime>
-<size>700</size>
-<charset>utf-8</charset>
-<mime-type>text/html</mime-type>
-<passages>
-<passage>2 мар. 2024 г. - Просмотрите доску «<hlword>fdsfs</hlword>» пользователя Rachel Black в Pinterest.</passage>
-</passages>
-<properties>
-<_PassagesType>0</_PassagesType>
-<lang>de</lang>
-</properties>
-</doc>
-</group>
-<group>
-<doccount>1</doccount>
-<relevance priority="all"/>
-<doc id="Z0B4D2289B72E95D4">
-<relevance priority="all"/>
-<saved-copy-url>https://yandexwebcache.net/yandbtm?fmode=inject&amp;tm=1733679232&amp;tld=ru&amp;lang=ru&amp;la=1732547968&amp;text=fdsfs&amp;url=https%3A//vk.com/gfdgdgfdhgfhf&amp;l10n=ru&amp;mime=html&amp;sign=adf6e075cb73caad234abf7cf1ab5b9d&amp;keyno=0</saved-copy-url>
-<url>https://vk.com/gfdgdgfdhgfhf</url>
-<domain>vk.com</domain>
-<title><hlword>Fdsfs</hlword> 2024 | ВКонтакте</title>
-<modtime>20160718T142846</modtime>
-<size>337</size>
-<charset>windows-1251</charset>
-<mime-type>text/html</mime-type>
-<passages>
-<passage>Сообщество «<hlword>fdsfs</hlword>» ВКонтакте — программное обеспечение, РоссияПрограммное...</passage>
+<passage>Шрек на <hlword>аву</hlword> Глаза На <hlword>Аву</hlword> Аниме, Красный Глаз На <hlword>Аву</hlword> Октябрь...</passage>
 </passages>
 <properties>
 <_PassagesType>0</_PassagesType>
@@ -153,37 +43,37 @@
 <group>
 <doccount>1</doccount>
 <relevance priority="all"/>
-<doc id="Z35128325C966129E">
+<doc touchdown="РКН: сайт нарушает закон РФ" id="ZFF9209F2F5F88A07">
 <relevance priority="all"/>
-<saved-copy-url>https://yandexwebcache.net/yandbtm?fmode=inject&amp;tm=1733679232&amp;tld=ru&amp;lang=en&amp;la=1732767616&amp;text=fdsfs&amp;url=https%3A//steamcommunity.com/sharedfiles/filedetails/%3Fid%3D2887853794&amp;l10n=ru&amp;mime=html&amp;sign=3f9369d958c41e73d2a7188b76cfe165&amp;keyno=0</saved-copy-url>
-<url>https://steamcommunity.com/sharedfiles/filedetails/?id=2887853794</url>
-<domain>steamcommunity.com</domain>
-<title>Steam Workshop::<hlword>FDSFS</hlword></title>
-<modtime>20221113T015504</modtime>
-<size>956</size>
+<saved-copy-url>https://yandexwebcache.net/yandbtm?fmode=inject&amp;tm=1733816959&amp;tld=ru&amp;lang=ru&amp;la=1733798656&amp;text=%D0%B0%D0%B2%D1%8B&amp;url=https%3A//ru.pinterest.com/ideas/%25D0%25BA%25D0%25BB%25D0%25B0%25D1%2581%25D1%2581%25D0%25BD%25D1%258B%25D0%25B5-%25D0%25B0%25D0%25B2%25D1%258B-%25D0%25B4%25D0%25BB%25D1%258F-%25D1%2582%25D0%25B3/953408264586/&amp;l10n=ru&amp;mime=html&amp;sign=caefcaaf222fd17dc5eb6d21edccf10d&amp;keyno=0</saved-copy-url>
+<url>https://ru.pinterest.com/ideas/%D0%BA%D0%BB%D0%B0%D1%81%D1%81%D0%BD%D1%8B%D0%B5-%D0%B0%D0%B2%D1%8B-%D0%B4%D0%BB%D1%8F-%D1%82%D0%B3/953408264586/</url>
+<domain>ru.pinterest.com</domain>
+<title>Классные <hlword>Авы</hlword> Для Тг</title>
+<modtime>20231121T040023</modtime>
+<size>1332</size>
 <charset>utf-8</charset>
 <mime-type>text/html</mime-type>
 <passages>
-<passage><hlword>FDSFS</hlword>. Description Discussions0 Comments0 Change Notes.</passage>
+<passage>Аватарка На <hlword>Аву</hlword> Грусные, Деприсивная <hlword>Ава</hlword>, <hlword>Ава</hlword> Грусная В Тг, Грустая <hlword>Ава</hlword>...</passage>
 </passages>
 <properties>
 <_PassagesType>0</_PassagesType>
-<lang>en</lang>
+<lang>ru</lang>
 </properties>
 </doc>
 </group>
 <group>
 <doccount>1</doccount>
 <relevance priority="all"/>
-<doc touchdown="РКН: сайт нарушает закон РФ" id="Z7A8F03ED4D3A6E32">
+<doc touchdown="РКН: сайт нарушает закон РФ" id="Z06A01A20CCB602C7">
 <relevance priority="all"/>
-<saved-copy-url>https://yandexwebcache.net/yandbtm?fmode=inject&amp;tm=1733679232&amp;tld=ru&amp;lang=ru&amp;la=1729526400&amp;text=fdsfs&amp;url=https%3A//www.youtube.com/watch%3Fv%3DbIKXk-jgHXc&amp;l10n=ru&amp;mime=html&amp;sign=0858289ff33d629c6c350f5d1765e9be&amp;keyno=0</saved-copy-url>
-<url>https://www.youtube.com/watch?v=bIKXk-jgHXc</url>
-<domain>www.youtube.com</domain>
-<title><hlword>Fdsfs</hlword> — YouTube</title>
-<headline>О сервисе Прессе Авторские права Связаться с нами Авторам Рекламодателям...</headline>
-<modtime>20191227T041755</modtime>
-<size>133</size>
+<saved-copy-url>https://yandexwebcache.net/yandbtm?fmode=inject&amp;tm=1733816959&amp;tld=ru&amp;lang=ru&amp;la=1733106560&amp;text=%D0%B0%D0%B2%D1%8B&amp;url=https%3A//ru.pinterest.com/lenashvets06/%25D0%25B0%25D0%25B2%25D1%258B/&amp;l10n=ru&amp;mime=html&amp;sign=8483b88d887ef4043407786c5dad5e85&amp;keyno=0</saved-copy-url>
+<url>https://ru.pinterest.com/lenashvets06/%D0%B0%D0%B2%D1%8B/</url>
+<domain>ru.pinterest.com</domain>
+<title>Идеи на тему «<hlword>Авы</hlword>» (900+) в 2024 г | фотографии профиля...</title>
+<headline>26 нояб. 2024 г. - Просмотрите доску «<hlword>авы</hlword>» пользователя Студия Макса в Pinterest.</headline>
+<modtime>20220212T002900</modtime>
+<size>1077</size>
 <charset>utf-8</charset>
 <mime-type>text/html</mime-type>
 <properties>
@@ -195,54 +85,164 @@
 <group>
 <doccount>1</doccount>
 <relevance priority="all"/>
-<doc id="ZA86DC41564EA5C7A">
+<doc touchdown="РКН: сайт нарушает закон РФ" id="Z2A2C3C6D23B6B1DB">
 <relevance priority="all"/>
-<saved-copy-url>https://yandexwebcache.net/yandbtm?fmode=inject&amp;tm=1733679232&amp;tld=ru&amp;lang=en&amp;la=1731611136&amp;text=fdsfs&amp;url=https%3A//www.allacronyms.com/FDSFS&amp;l10n=ru&amp;mime=html&amp;sign=11df991220d837c49618120184be6d91&amp;keyno=0</saved-copy-url>
-<url>https://www.allacronyms.com/FDSFS</url>
-<domain>www.allacronyms.com</domain>
-<title><hlword>FDSFS</hlword> Abbreviation Meaning — All Acronyms</title>
-<modtime>20200610T223148</modtime>
-<size>811</size>
+<saved-copy-url>https://yandexwebcache.net/yandbtm?fmode=inject&amp;tm=1733816959&amp;tld=ru&amp;lang=ru&amp;la=1733768832&amp;text=%D0%B0%D0%B2%D1%8B&amp;url=https%3A//ru.pinterest.com/ideas/%25D0%25B0%25D0%25B2%25D1%258B-%25D1%2582%25D0%25BE%25D0%25BF%25D0%25BE%25D0%25B2%25D1%258B%25D0%25B5/902391464176/&amp;l10n=ru&amp;mime=html&amp;sign=5415d96af2997e1920945d8f98409c34&amp;keyno=0</saved-copy-url>
+<url>https://ru.pinterest.com/ideas/%D0%B0%D0%B2%D1%8B-%D1%82%D0%BE%D0%BF%D0%BE%D0%B2%D1%8B%D0%B5/902391464176/</url>
+<domain>ru.pinterest.com</domain>
+<title>Pinterest — <hlword>Авы</hlword> Топовые</title>
+<modtime>20231031T053006</modtime>
+<size>1063</size>
 <charset>utf-8</charset>
 <mime-type>text/html</mime-type>
 <passages>
-<passage>Explore the list of 1 best <hlword>FDSFS</hlword> meaning form based on popularity.</passage>
+<passage>Ознакомьтесь с наилучшими идеями на тему «<hlword>Авы</hlword> топовые» от Pinterest.</passage>
 </passages>
 <properties>
 <_PassagesType>0</_PassagesType>
-<lang>en</lang>
+<lang>ru</lang>
 </properties>
 </doc>
 </group>
 <group>
 <doccount>1</doccount>
 <relevance priority="all"/>
-<doc id="ZA02971399D1C851C">
+<doc touchdown="РКН: сайт нарушает закон РФ" id="Z47A5FD462EC6C055">
 <relevance priority="all"/>
-<saved-copy-url>https://yandexwebcache.net/yandbtm?fmode=inject&amp;tm=1733679232&amp;tld=ru&amp;lang=en&amp;la=1721613184&amp;text=fdsfs&amp;url=https%3A//www.allacronyms.com/FDSFS/biology&amp;l10n=ru&amp;mime=html&amp;sign=9eb7ec766e0bbdb2a11d1a81b233b38e&amp;keyno=0</saved-copy-url>
-<url>https://www.allacronyms.com/FDSFS/biology</url>
-<domain>www.allacronyms.com</domain>
-<title><hlword>FDSFS</hlword> Biology Abbreviation Meaning</title>
-<modtime>20200613T004918</modtime>
-<size>851</size>
+<saved-copy-url>https://yandexwebcache.net/yandbtm?fmode=inject&amp;tm=1733816959&amp;tld=ru&amp;lang=ru&amp;la=1733060096&amp;text=%D0%B0%D0%B2%D1%8B&amp;url=https%3A//ru.pinterest.com/ideas/%25D0%25B4%25D0%25BB%25D1%258F-%25D0%25B0%25D0%25B2%25D1%258B-%25D0%25B2%25D0%25BA/941598242712/&amp;l10n=ru&amp;mime=html&amp;sign=d312e453f9fa593e22e3fc48e31567e9&amp;keyno=0</saved-copy-url>
+<url>https://ru.pinterest.com/ideas/%D0%B4%D0%BB%D1%8F-%D0%B0%D0%B2%D1%8B-%D0%B2%D0%BA/941598242712/</url>
+<domain>ru.pinterest.com</domain>
+<title>Для <hlword>Авы</hlword> Вк</title>
+<modtime>20231121T040840</modtime>
+<size>1428</size>
 <charset>utf-8</charset>
 <mime-type>text/html</mime-type>
 <passages>
-<passage>Explore <hlword>FDSFS</hlword> Definitions: Discover the complete range of meanings for <hlword>FDSFS</hlword>...</passage>
+<passage>Ознакомьтесь с наилучшими идеями на тему «Для <hlword>авы</hlword> вк» от Pinterest.</passage>
 </passages>
 <properties>
 <_PassagesType>0</_PassagesType>
-<lang>en</lang>
+<lang>ru</lang>
 </properties>
 </doc>
 </group>
-<found priority="phrase">2423</found>
-<found priority="strict">2423</found>
-<found priority="all">2423</found>
-<found-docs priority="phrase">2438</found-docs>
-<found-docs priority="strict">2438</found-docs>
-<found-docs priority="all">2438</found-docs>
-<found-docs-human>нашёл 2 тыс. ответов</found-docs-human>
+<group>
+<doccount>1</doccount>
+<relevance priority="all"/>
+<doc touchdown="РКН: сайт нарушает закон РФ" id="Z8DD68D7F302CB6C7">
+<relevance priority="all"/>
+<saved-copy-url>https://yandexwebcache.net/yandbtm?fmode=inject&amp;tm=1733816959&amp;tld=ru&amp;lang=ru&amp;la=1733107968&amp;text=%D0%B0%D0%B2%D1%8B&amp;url=https%3A//ru.pinterest.com/ideas/%25D1%2584%25D0%25BE%25D1%2582%25D0%25BE-%25D0%25BD%25D0%25B0-%25D0%25B0%25D0%25B2%25D1%2583/920160112067/&amp;l10n=ru&amp;mime=html&amp;sign=997e938641d8f31de7cec87caad516b9&amp;keyno=0</saved-copy-url>
+<url>https://ru.pinterest.com/ideas/%D1%84%D0%BE%D1%82%D0%BE-%D0%BD%D0%B0-%D0%B0%D0%B2%D1%83/920160112067/</url>
+<domain>ru.pinterest.com</domain>
+<title>Pinterest — Фото На <hlword>Аву</hlword></title>
+<modtime>20230721T160811</modtime>
+<size>839</size>
+<charset>utf-8</charset>
+<mime-type>text/html</mime-type>
+<passages>
+<passage>Ознакомьтесь с наилучшими идеями на тему «Фото на <hlword>аву</hlword>» от Pinterest.</passage>
+</passages>
+<properties>
+<_PassagesType>0</_PassagesType>
+<lang>ru</lang>
+</properties>
+</doc>
+</group>
+<group>
+<doccount>1</doccount>
+<relevance priority="all"/>
+<doc touchdown="РКН: сайт нарушает закон РФ" id="ZDE4AD64501AD306D">
+<relevance priority="all"/>
+<saved-copy-url>https://yandexwebcache.net/yandbtm?fmode=inject&amp;tm=1733816959&amp;tld=ru&amp;lang=ru&amp;la=1733110656&amp;text=%D0%B0%D0%B2%D1%8B&amp;url=https%3A//ru.pinterest.com/ideas/%25D1%2582%25D0%25BE%25D0%25BF-%25D0%25B0%25D0%25B2%25D0%25B0%25D1%2582%25D0%25B0%25D1%2580%25D0%25BA%25D0%25B8/916219657943/&amp;l10n=ru&amp;mime=html&amp;sign=8d3bd69b6a217eb781eec41e94b0a03b&amp;keyno=0</saved-copy-url>
+<url>https://ru.pinterest.com/ideas/%D1%82%D0%BE%D0%BF-%D0%B0%D0%B2%D0%B0%D1%82%D0%B0%D1%80%D0%BA%D0%B8/916219657943/</url>
+<domain>ru.pinterest.com</domain>
+<title>Pinterest — Топ Аватарки</title>
+<modtime>20230510T182158</modtime>
+<size>1105</size>
+<charset>utf-8</charset>
+<mime-type>text/html</mime-type>
+<passages>
+<passage>Аватарки <hlword>Ава</hlword>, Аватарки, Том, Топ, Старинный Мультфильм.</passage>
+</passages>
+<properties>
+<_PassagesType>0</_PassagesType>
+<lang>ru</lang>
+</properties>
+</doc>
+</group>
+<group>
+<doccount>1</doccount>
+<relevance priority="all"/>
+<doc touchdown="РКН: сайт нарушает закон РФ" id="ZE13265FF3C73B695">
+<relevance priority="all"/>
+<saved-copy-url>https://yandexwebcache.net/yandbtm?fmode=inject&amp;tm=1733816959&amp;tld=ru&amp;lang=ru&amp;la=1732892544&amp;text=%D0%B0%D0%B2%D1%8B&amp;url=https%3A//ru.pinterest.com/ideas/%25D1%258D%25D1%2581%25D1%2582%25D0%25B5%25D1%2582%25D0%25B8%25D1%2587%25D0%25BD%25D1%258B%25D0%25B5-%25D0%25B0%25D0%25B2%25D1%258B/952604943830/&amp;l10n=ru&amp;mime=html&amp;sign=6adde8190ec45f6282a15e8307ba0fe7&amp;keyno=0</saved-copy-url>
+<url>https://ru.pinterest.com/ideas/%D1%8D%D1%81%D1%82%D0%B5%D1%82%D0%B8%D1%87%D0%BD%D1%8B%D0%B5-%D0%B0%D0%B2%D1%8B/952604943830/</url>
+<domain>ru.pinterest.com</domain>
+<title>Pinterest — Эстетичные <hlword>Авы</hlword></title>
+<modtime>20230721T161533</modtime>
+<size>1227</size>
+<charset>utf-8</charset>
+<mime-type>text/html</mime-type>
+<passages>
+<passage>Ознакомьтесь с наилучшими идеями на тему «Эстетичные <hlword>авы</hlword>» от Pinterest.</passage>
+</passages>
+<properties>
+<_PassagesType>0</_PassagesType>
+<lang>ru</lang>
+</properties>
+</doc>
+</group>
+<group>
+<doccount>1</doccount>
+<relevance priority="all"/>
+<doc touchdown="РКН: сайт нарушает закон РФ" id="Z601E7B0ECFC277C9">
+<relevance priority="all"/>
+<saved-copy-url>https://yandexwebcache.net/yandbtm?fmode=inject&amp;tm=1733816959&amp;tld=ru&amp;lang=ru&amp;la=1733070208&amp;text=%D0%B0%D0%B2%D1%8B&amp;url=https%3A//ru.pinterest.com/ideas/%25D0%25BA%25D1%2580%25D1%2583%25D1%2582%25D1%258B%25D0%25B5-%25D0%25B0%25D0%25B2%25D0%25B0%25D1%2582%25D0%25B0%25D1%2580%25D0%25BA%25D0%25B8/898883817191/&amp;l10n=ru&amp;mime=html&amp;sign=c12243ecd1c1796e493bc27890a20070&amp;keyno=0</saved-copy-url>
+<url>https://ru.pinterest.com/ideas/%D0%BA%D1%80%D1%83%D1%82%D1%8B%D0%B5-%D0%B0%D0%B2%D0%B0%D1%82%D0%B0%D1%80%D0%BA%D0%B8/898883817191/</url>
+<domain>ru.pinterest.com</domain>
+<title>Pinterest — Крутые Аватарки</title>
+<modtime>20231121T040548</modtime>
+<size>1305</size>
+<charset>utf-8</charset>
+<mime-type>text/html</mime-type>
+<passages>
+<passage>Для Аватарки В Инстаграм, <hlword>Авы</hlword> Лунтик, Крутые <hlword>Авы</hlword> В Лайк, Аватарки Мультики...</passage>
+</passages>
+<properties>
+<_PassagesType>0</_PassagesType>
+<lang>ru</lang>
+</properties>
+</doc>
+</group>
+<group>
+<doccount>1</doccount>
+<relevance priority="all"/>
+<doc touchdown="РКН: сайт нарушает закон РФ" id="Z065698F2B28E0728">
+<relevance priority="all"/>
+<saved-copy-url>https://yandexwebcache.net/yandbtm?fmode=inject&amp;tm=1733816959&amp;tld=ru&amp;lang=ru&amp;la=1733042688&amp;text=%D0%B0%D0%B2%D1%8B&amp;url=https%3A//ru.pinterest.com/ideas/%25D0%25BA%25D0%25BE%25D0%25BC%25D1%2584%25D0%25BE%25D1%2580%25D1%2582%25D0%25BD%25D1%258B%25D0%25B5-%25D0%25B0%25D0%25B2%25D1%258B/956896375165/&amp;l10n=ru&amp;mime=html&amp;sign=e20702b9996d77a7273a706808890ad2&amp;keyno=0</saved-copy-url>
+<url>https://ru.pinterest.com/ideas/%D0%BA%D0%BE%D0%BC%D1%84%D0%BE%D1%80%D1%82%D0%BD%D1%8B%D0%B5-%D0%B0%D0%B2%D1%8B/956896375165/</url>
+<domain>ru.pinterest.com</domain>
+<title>Pinterest — Комфортные <hlword>Авы</hlword></title>
+<modtime>20231121T041925</modtime>
+<size>1170</size>
+<charset>utf-8</charset>
+<mime-type>text/html</mime-type>
+<passages>
+<passage>Ознакомьтесь с наилучшими идеями на тему «Комфортные <hlword>авы</hlword>» от Pinterest.</passage>
+</passages>
+<properties>
+<_PassagesType>0</_PassagesType>
+<lang>ru</lang>
+</properties>
+</doc>
+</group>
+<found priority="phrase">3849</found>
+<found priority="strict">3849</found>
+<found priority="all">3849</found>
+<found-docs priority="phrase">5744</found-docs>
+<found-docs priority="strict">5744</found-docs>
+<found-docs priority="all">5744</found-docs>
+<found-docs-human>нашёл 6 тыс. ответов</found-docs-human>
 </grouping>
 </results>
 </response>

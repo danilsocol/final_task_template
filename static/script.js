@@ -39,6 +39,8 @@ const chatHistory = document.getElementById('chat-history');
 const chatInput = document.getElementById('chat-input');
 const sendButton = document.getElementById('send-button');
 
+let currentSessionId = null;
+
 sendButton.addEventListener('click', async () => {
     const message = chatInput.value;
     if (message.trim() !== '') {
@@ -48,27 +50,52 @@ sendButton.addEventListener('click', async () => {
 
         // Блокируем кнопку
         sendButton.disabled = true;
-
+        
         // Отправляем запрос на сервер (заглушка)
         // Здесь будет асинхронный вызов к вашему FastAPI endpoint для чата
         // Например, fetch('/chat', { method: 'POST', body: JSON.stringify({ message: message }) })
+        try {
+            const response = await fetch('/chat', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify({
+                    text: message,
+                    session_id: currentSessionId
+                })
+            });
+            
+        // // Задержка для имитации ответа от сервера
+        // setTimeout(() => {
+        //     // Добавляем ответ от бота в историю чата (заглушка)
+        //     addMessage('bot', `Ответ от бота: Вы сказали "${message}"`);
+            if (!response.ok) {
+                throw new Error('Ошибка сети');
+            }
 
-        // Задержка для имитации ответа от сервера
-        setTimeout(() => {
-            // Добавляем ответ от бота в историю чата (заглушка)
-            addMessage('bot', `Ответ от бота: Вы сказали "${message}"`);
-
-            // Разблокируем кнопку
+            const data = await response.json();
+            currentSessionId = data.session_id;
+            addMessage('bot', data.response);
+        } catch (error) {
+            console.error('Ошибка при отправке сообщения:', error);
+            addMessage('system', 'Произошла ошибка при отправке сообщения');
+        } finally {
             sendButton.disabled = false;
-        }, 1000);
+        }
     }
 });
 
 function addMessage(sender, message) {
     const messageElement = document.createElement('div');
-    messageElement.textContent = `${sender}: ${message}`;
+    if (sender === 'system') {
+        return;
+    }
+    
+    messageElement.textContent = message;
+    messageElement.className = `message ${sender}-message`;
     chatHistory.appendChild(messageElement);
-    chatHistory.scrollTop = chatHistory.scrollHeight; // Прокручиваем вниз
+    chatHistory.scrollTop = chatHistory.scrollHeight;
 }
 
 const searchButton = document.getElementById('search-button');

@@ -1,11 +1,16 @@
 import json
 import os
-from http.client import HTTPException
 import argparse
 import asyncio
 from concurrent.futures import ThreadPoolExecutor
+from typing import Dict, List, Optional
+import uuid
+from contextlib import asynccontextmanager
+import logging
+from datetime import datetime, timedelta
+import re
 
-from fastapi import FastAPI, Request, requests, Query
+from fastapi import FastAPI, Request, requests, Query, HTTPException
 from fastapi.responses import HTMLResponse
 from fastapi.staticfiles import StaticFiles
 from pydantic import BaseModel
@@ -16,6 +21,22 @@ from helpers.researchAPIv1 import fetch_yandex_search_results, parse_xml_data
 from models.news_item import NewsItem
 from models.search import SearchResult, SearchRequest
 from parser.news_parser import NewsParser
+from models.local_ml import MLModel
+from models.message import Message, ChatMessage, ChatHistory, ChatHistoryForModel
+
+
+# Константы
+MAX_HISTORY_LENGTH = 10
+MAX_SESSION_AGE = timedelta(hours=24)
+
+# Настройка логирования
+logging.basicConfig(
+    level=logging.INFO,
+    format='%(asctime)s - %(name)s - %(levelname)s - %(message)s'
+)
+logger = logging.getLogger(__name__)
+
+ml_model = MLModel()
 
 def load_news_data():
     try:
@@ -42,7 +63,49 @@ def parse_arguments():
     
     return args
 
-app = FastAPI()
+@asynccontextmanager
+async def lifespan(app: FastAPI):
+    # Инициализация модели при запуске
+    try:
+        ml_model.initialize()
+        yield
+    finally:
+        # Очистка при завершении
+        ml_model.cleanup()
+
+
+app = FastAPI(lifespan=lifespan)
+
+async def generate_response_with_timeout(messages: List[ChatMessage]) -> str:
+    try:
+        response = await asyncio.to_thread(ml_model.generate_response, messages)
+        
+        return response
+        
+    except Exception as e:
+        logger.error(f"Ошибка при генерации ответа: {str(e)}")
+        raise HTTPException(status_code=500, detail=str(e))
+
+chat_histories: Dict[str, ChatHistory] = {}  # История для UI
+model_histories: Dict[str, ChatHistoryForModel] = {}  # История для модели
+
+async def cleanup_old_sessions():
+    current_time = datetime.now()
+    expired_sessions = [
+        session_id for session_id, history in chat_histories.items()
+        if (current_time - history.last_activity) > MAX_SESSION_AGE
+    ]
+    for session_id in expired_sessions:
+        del chat_histories[session_id]
+    logger.info(f"Очищено {len(expired_sessions)} неактивных сессий")
+
+async def run_parser_async():
+    with ThreadPoolExecutor() as executor:
+        loop = asyncio.get_event_loop()
+        try:
+            await loop.run_in_executor(executor, run_parser)
+        except Exception as e:
+            print(f"Ошибка при парсинге: {str(e)}")
 
 app.mount("/static", StaticFiles(directory="static"), name="static")
 
@@ -72,6 +135,67 @@ async def search(query: str = Query(...)):
 @app.get("/")
 def index():
     return HTMLResponse(content=open("index.html", "r", encoding="utf-8").read())
+
+@app.post("/chat")
+async def chat(message: Message, session_id: Optional[str] = None):
+    try:
+        await cleanup_old_sessions()
+        
+        if not session_id or session_id not in chat_histories:
+            session_id = str(uuid.uuid4())
+            logger.info(f"Создание новой сессии: {session_id}")
+            
+            # Создаем системный промпт отдельно
+            system_prompt = ChatMessage(
+                role="system",
+                content="""You are a public relations manager at Chelyabinsk State University. 
+                        Your task is:
+                        1. Answer questions about the university and its programs
+                        2. Use mainly Russian language
+                        3. Be polite and professional
+                        4. Provide accurate information
+                        5. If necessary, clarify the details of the issue
+                        
+                        Response format:
+                        - Do not use the prefixes 'user:' or 'bot:'
+                        - Respond in a structured way
+                        - Use the official communication style
+                        - Do not repeat the same information
+                        - Do not return the information do you get from the user
+                        """
+            )
+            
+            # Инициализируем историю чата только с системным промптом
+            chat_histories[session_id] = ChatHistory(
+                messages=[system_prompt],
+                session_id=session_id
+            )
+        
+        history = chat_histories[session_id]
+        logger.info(f"Количество сообщений в истории: {len(history.messages)}")
+        print(history.messages)
+        history.update_activity()
+        
+        # Добавляем сообщение пользователя
+        user_message = ChatMessage(role="user", content=message.text)
+        history.messages.append(user_message)
+        
+        # Генерируем ответ
+        response = await generate_response_with_timeout(history.messages)
+        
+        # Добавляем только ответ ассистента в историю
+        assistant_message = ChatMessage(role="assistant", content=response)
+        history.messages.append(assistant_message)
+        
+        # Возвращаем только последний ответ
+        return {
+            "response": response,
+            "session_id": session_id
+        }
+        
+    except Exception as e:
+        logger.error(f"Ошибка в чате: {str(e)}")
+        raise HTTPException(status_code=500, detail=str(e))
 
 if __name__ == "__main__":
     args = parse_arguments()
