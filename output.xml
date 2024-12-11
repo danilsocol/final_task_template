@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <yandexsearch version="1.0">
 <request>
-<query>авы</query>
+<query>Запросить расписок звонков ЧелГУ можно на официальном сайte университета в разделе &quot;Расписания&quot; или посетить следующую ссыл</query>
 <page>0</page>
 <sortby order="descending" priority="no">rlv</sortby>
 <maxpassages>1</maxpassages>
@@ -9,30 +9,35 @@
 <groupby attr="" mode="flat" groups-on-page="10" docs-in-group="1" curcateg="-1"/>
 </groupings>
 </request>
-<response date="20241210T074919">
-<reqid>1733816959201632-18397718737972811676-balancer-l7leveler-kubr-yp-klg-42-BAL</reqid>
-<found priority="phrase">205181</found>
-<found priority="strict">205181</found>
-<found priority="all">205181</found>
-<found-human>Нашлось 205 тыс. ответов</found-human>
+<response date="20241211T092207">
+<reqid>1733908927443021-6989296050567905203-balancer-l7leveler-kubr-yp-sas-102-BAL</reqid>
+<found priority="phrase">5297</found>
+<found priority="strict">5297</found>
+<found priority="all">5297</found>
+<found-human>Нашлось 5 тыс. ответов</found-human>
+<misspell>
+<rule>Misspell</rule>
+<source-text>Запросить расписок звонков ЧелГУ можно на официальном сай<hlword>te</hlword> университета в разделе &quot;Расписания&quot; или посетить следующую ссыл</source-text>
+<text>Запросить расписок звонков ЧелГУ можно на официальном сайте университета в разделе &quot;Расписания&quot; или посетить следующую ссыл</text>
+</misspell>
 <results>
 <grouping attr="" mode="flat" groups-on-page="10" docs-in-group="1" curcateg="-1">
 <page first="1" last="10">0</page>
 <group>
 <doccount>1</doccount>
 <relevance priority="all"/>
-<doc touchdown="РКН: сайт нарушает закон РФ" id="Z6A7B39CACECBEDC0">
+<doc id="Z0BC598D3319FAED2">
 <relevance priority="all"/>
-<saved-copy-url>https://yandexwebcache.net/yandbtm?fmode=inject&amp;tm=1733816959&amp;tld=ru&amp;lang=ru&amp;la=1733111808&amp;text=%D0%B0%D0%B2%D1%8B&amp;url=https%3A//ru.pinterest.com/ideas/%25D1%2587%25D1%2582%25D0%25BE-%25D1%2582%25D0%25BE-%25D0%25BD%25D0%25B0-%25D0%25B0%25D0%25B2%25D1%2583/896766202852/&amp;l10n=ru&amp;mime=html&amp;sign=80fd3f03bb527a3c9f0507d1d4ce92d2&amp;keyno=0</saved-copy-url>
-<url>https://ru.pinterest.com/ideas/%D1%87%D1%82%D0%BE-%D1%82%D0%BE-%D0%BD%D0%B0-%D0%B0%D0%B2%D1%83/896766202852/</url>
-<domain>ru.pinterest.com</domain>
-<title>Что То На <hlword>Аву</hlword></title>
-<modtime>20231031T053447</modtime>
-<size>1163</size>
+<saved-copy-url>https://yandexwebcache.net/yandbtm?fmode=inject&amp;tm=1733908927&amp;tld=ru&amp;lang=ru&amp;la=1733285248&amp;text=%D0%97%D0%B0%D0%BF%D1%80%D0%BE%D1%81%D0%B8%D1%82%D1%8C+%D1%80%D0%B0%D1%81%D0%BF%D0%B8%D1%81%D0%BE%D0%BA+%D0%B7%D0%B2%D0%BE%D0%BD%D0%BA%D0%BE%D0%B2+%D0%A7%D0%B5%D0%BB%D0%93%D0%A3+%D0%BC%D0%BE%D0%B6%D0%BD%D0%BE+%D0%BD%D0%B0+%D0%BE%D1%84%D0%B8%D1%86%D0%B8%D0%B0%D0%BB%D1%8C%D0%BD%D0%BE%D0%BC+%D1%81%D0%B0%D0%B9te+%D1%83%D0%BD%D0%B8%D0%B2%D0%B5%D1%80%D1%81%D0%B8%D1%82%D0%B5%D1%82%D0%B0+%D0%B2+%D1%80%D0%B0%D0%B7%D0%B4%D0%B5%D0%BB%D0%B5+%22%D0%A0%D0%B0%D1%81%D0%BF%D0%B8%D1%81%D0%B0%D0%BD%D0%B8%D1%8F%22+%D0%B8%D0%BB%D0%B8+%D0%BF%D0%BE%D1%81%D0%B5%D1%82%D0%B8%D1%82%D1%8C+%D1%81%D0%BB%D0%B5%D0%B4%D1%83%D1%8E%D1%89%D1%83%D1%8E+%D1%81%D1%81%D1%8B%D0%BB&amp;url=https%3A//www.csu.ru/roles/students/Timetable/main.aspx&amp;l10n=ru&amp;mime=html&amp;sign=867d1225b1b144d5ee429fe0f2efbd65&amp;keyno=0</saved-copy-url>
+<url>https://www.csu.ru/roles/students/Timetable/main.aspx</url>
+<domain>www.csu.ru</domain>
+<title><hlword>Расписания</hlword> — <hlword>Челябинский</hlword> <hlword>государственный</hlword>...</title>
+<modtime>20161111T090742</modtime>
+<size>6109</size>
 <charset>utf-8</charset>
 <mime-type>text/html</mime-type>
 <passages>
-<passage>Шрек на <hlword>аву</hlword> Глаза На <hlword>Аву</hlword> Аниме, Красный Глаз На <hlword>Аву</hlword> Октябрь...</passage>
+<passage>История <hlword>университета</hlword>. 40-летие <hlword>ЧелГУ</hlword>.</passage>
 </passages>
 <properties>
 <_PassagesType>0</_PassagesType>
@@ -43,18 +48,18 @@
 <group>
 <doccount>1</doccount>
 <relevance priority="all"/>
-<doc touchdown="РКН: сайт нарушает закон РФ" id="ZFF9209F2F5F88A07">
+<doc id="ZD32977DAF7D32B09">
 <relevance priority="all"/>
-<saved-copy-url>https://yandexwebcache.net/yandbtm?fmode=inject&amp;tm=1733816959&amp;tld=ru&amp;lang=ru&amp;la=1733798656&amp;text=%D0%B0%D0%B2%D1%8B&amp;url=https%3A//ru.pinterest.com/ideas/%25D0%25BA%25D0%25BB%25D0%25B0%25D1%2581%25D1%2581%25D0%25BD%25D1%258B%25D0%25B5-%25D0%25B0%25D0%25B2%25D1%258B-%25D0%25B4%25D0%25BB%25D1%258F-%25D1%2582%25D0%25B3/953408264586/&amp;l10n=ru&amp;mime=html&amp;sign=caefcaaf222fd17dc5eb6d21edccf10d&amp;keyno=0</saved-copy-url>
-<url>https://ru.pinterest.com/ideas/%D0%BA%D0%BB%D0%B0%D1%81%D1%81%D0%BD%D1%8B%D0%B5-%D0%B0%D0%B2%D1%8B-%D0%B4%D0%BB%D1%8F-%D1%82%D0%B3/953408264586/</url>
-<domain>ru.pinterest.com</domain>
-<title>Классные <hlword>Авы</hlword> Для Тг</title>
-<modtime>20231121T040023</modtime>
-<size>1332</size>
+<saved-copy-url>https://yandexwebcache.net/yandbtm?fmode=inject&amp;tm=1733908927&amp;tld=ru&amp;lang=ru&amp;la=1733299840&amp;text=%D0%97%D0%B0%D0%BF%D1%80%D0%BE%D1%81%D0%B8%D1%82%D1%8C+%D1%80%D0%B0%D1%81%D0%BF%D0%B8%D1%81%D0%BE%D0%BA+%D0%B7%D0%B2%D0%BE%D0%BD%D0%BA%D0%BE%D0%B2+%D0%A7%D0%B5%D0%BB%D0%93%D0%A3+%D0%BC%D0%BE%D0%B6%D0%BD%D0%BE+%D0%BD%D0%B0+%D0%BE%D1%84%D0%B8%D1%86%D0%B8%D0%B0%D0%BB%D1%8C%D0%BD%D0%BE%D0%BC+%D1%81%D0%B0%D0%B9te+%D1%83%D0%BD%D0%B8%D0%B2%D0%B5%D1%80%D1%81%D0%B8%D1%82%D0%B5%D1%82%D0%B0+%D0%B2+%D1%80%D0%B0%D0%B7%D0%B4%D0%B5%D0%BB%D0%B5+%22%D0%A0%D0%B0%D1%81%D0%BF%D0%B8%D1%81%D0%B0%D0%BD%D0%B8%D1%8F%22+%D0%B8%D0%BB%D0%B8+%D0%BF%D0%BE%D1%81%D0%B5%D1%82%D0%B8%D1%82%D1%8C+%D1%81%D0%BB%D0%B5%D0%B4%D1%83%D1%8E%D1%89%D1%83%D1%8E+%D1%81%D1%81%D1%8B%D0%BB&amp;url=https%3A//www.csu.ru/roles/students/Timing/Timing.aspx&amp;l10n=ru&amp;mime=html&amp;sign=e6d20bf264a9443a3c48ddca3ce5beb8&amp;keyno=0</saved-copy-url>
+<url>https://www.csu.ru/roles/students/Timing/Timing.aspx</url>
+<domain>www.csu.ru</domain>
+<title><hlword>Челябинский</hlword> <hlword>государственный</hlword> <hlword>университет</hlword> - Timing</title>
+<modtime>20151205T174300</modtime>
+<size>6859</size>
 <charset>utf-8</charset>
 <mime-type>text/html</mime-type>
 <passages>
-<passage>Аватарка На <hlword>Аву</hlword> Грусные, Деприсивная <hlword>Ава</hlword>, <hlword>Ава</hlword> Грусная В Тг, Грустая <hlword>Ава</hlword>...</passage>
+<passage>Главная &gt; Студентам&gt;<hlword>Расписания</hlword>&gt;Расписание звонковВыбранный в данный момент Проход по ссылкам навигации Timing.</passage>
 </passages>
 <properties>
 <_PassagesType>0</_PassagesType>
@@ -65,38 +70,177 @@
 <group>
 <doccount>1</doccount>
 <relevance priority="all"/>
-<doc touchdown="РКН: сайт нарушает закон РФ" id="Z06A01A20CCB602C7">
+<doc id="Z075C086CA60DC116">
 <relevance priority="all"/>
-<saved-copy-url>https://yandexwebcache.net/yandbtm?fmode=inject&amp;tm=1733816959&amp;tld=ru&amp;lang=ru&amp;la=1733106560&amp;text=%D0%B0%D0%B2%D1%8B&amp;url=https%3A//ru.pinterest.com/lenashvets06/%25D0%25B0%25D0%25B2%25D1%258B/&amp;l10n=ru&amp;mime=html&amp;sign=8483b88d887ef4043407786c5dad5e85&amp;keyno=0</saved-copy-url>
-<url>https://ru.pinterest.com/lenashvets06/%D0%B0%D0%B2%D1%8B/</url>
-<domain>ru.pinterest.com</domain>
-<title>Идеи на тему «<hlword>Авы</hlword>» (900+) в 2024 г | фотографии профиля...</title>
-<headline>26 нояб. 2024 г. - Просмотрите доску «<hlword>авы</hlword>» пользователя Студия Макса в Pinterest.</headline>
-<modtime>20220212T002900</modtime>
-<size>1077</size>
-<charset>utf-8</charset>
+<saved-copy-url>https://yandexwebcache.net/yandbtm?fmode=inject&amp;tm=1733908927&amp;tld=ru&amp;lang=ru&amp;la=1661568256&amp;text=%D0%97%D0%B0%D0%BF%D1%80%D0%BE%D1%81%D0%B8%D1%82%D1%8C+%D1%80%D0%B0%D1%81%D0%BF%D0%B8%D1%81%D0%BE%D0%BA+%D0%B7%D0%B2%D0%BE%D0%BD%D0%BA%D0%BE%D0%B2+%D0%A7%D0%B5%D0%BB%D0%93%D0%A3+%D0%BC%D0%BE%D0%B6%D0%BD%D0%BE+%D0%BD%D0%B0+%D0%BE%D1%84%D0%B8%D1%86%D0%B8%D0%B0%D0%BB%D1%8C%D0%BD%D0%BE%D0%BC+%D1%81%D0%B0%D0%B9te+%D1%83%D0%BD%D0%B8%D0%B2%D0%B5%D1%80%D1%81%D0%B8%D1%82%D0%B5%D1%82%D0%B0+%D0%B2+%D1%80%D0%B0%D0%B7%D0%B4%D0%B5%D0%BB%D0%B5+%22%D0%A0%D0%B0%D1%81%D0%BF%D0%B8%D1%81%D0%B0%D0%BD%D0%B8%D1%8F%22+%D0%B8%D0%BB%D0%B8+%D0%BF%D0%BE%D1%81%D0%B5%D1%82%D0%B8%D1%82%D1%8C+%D1%81%D0%BB%D0%B5%D0%B4%D1%83%D1%8E%D1%89%D1%83%D1%8E+%D1%81%D1%81%D1%8B%D0%BB&amp;url=https%3A//vk.com/@abit_flip-uchimsya-orientirovatsya-na-saite-chelgu&amp;l10n=ru&amp;mime=html&amp;sign=bb04bc45bf4e01edfccbbf9f4bd15426&amp;keyno=0</saved-copy-url>
+<url>https://vk.com/@abit_flip-uchimsya-orientirovatsya-na-saite-chelgu</url>
+<domain>vk.com</domain>
+<title>Учимся ориентироваться на сайте <hlword>ЧелГУ</hlword> | ВКонтакте</title>
+<headline>На сайте <hlword>ЧелГУ</hlword> есть много полезного не только для абитуриентов, но и для студентов.</headline>
+<modtime>20200831T154223</modtime>
+<size>549</size>
+<charset>windows-1251</charset>
 <mime-type>text/html</mime-type>
 <properties>
 <_PassagesType>0</_PassagesType>
 <lang>ru</lang>
+<extended-text>В нижней шапке расположились такие разделы как. — «Новости» — новости факультета. — «Абитуриентам» — информация о приемной кампании, направлениях подготовки и многом другом. — «Студентам» — много полезных ссылок, а еще календарные планы и расписание ГИА. — «Наука» — здесь можно узнать, что происходит в научной жизни факультета,</extended-text>
 </properties>
 </doc>
 </group>
 <group>
 <doccount>1</doccount>
 <relevance priority="all"/>
-<doc touchdown="РКН: сайт нарушает закон РФ" id="Z2A2C3C6D23B6B1DB">
+<doc id="Z5E5D78D59E399099">
 <relevance priority="all"/>
-<saved-copy-url>https://yandexwebcache.net/yandbtm?fmode=inject&amp;tm=1733816959&amp;tld=ru&amp;lang=ru&amp;la=1733768832&amp;text=%D0%B0%D0%B2%D1%8B&amp;url=https%3A//ru.pinterest.com/ideas/%25D0%25B0%25D0%25B2%25D1%258B-%25D1%2582%25D0%25BE%25D0%25BF%25D0%25BE%25D0%25B2%25D1%258B%25D0%25B5/902391464176/&amp;l10n=ru&amp;mime=html&amp;sign=5415d96af2997e1920945d8f98409c34&amp;keyno=0</saved-copy-url>
-<url>https://ru.pinterest.com/ideas/%D0%B0%D0%B2%D1%8B-%D1%82%D0%BE%D0%BF%D0%BE%D0%B2%D1%8B%D0%B5/902391464176/</url>
-<domain>ru.pinterest.com</domain>
-<title>Pinterest — <hlword>Авы</hlword> Топовые</title>
-<modtime>20231031T053006</modtime>
-<size>1063</size>
+<saved-copy-url>https://yandexwebcache.net/yandbtm?fmode=inject&amp;tm=1733908927&amp;tld=ru&amp;lang=ru&amp;la=1733829760&amp;text=%D0%97%D0%B0%D0%BF%D1%80%D0%BE%D1%81%D0%B8%D1%82%D1%8C+%D1%80%D0%B0%D1%81%D0%BF%D0%B8%D1%81%D0%BE%D0%BA+%D0%B7%D0%B2%D0%BE%D0%BD%D0%BA%D0%BE%D0%B2+%D0%A7%D0%B5%D0%BB%D0%93%D0%A3+%D0%BC%D0%BE%D0%B6%D0%BD%D0%BE+%D0%BD%D0%B0+%D0%BE%D1%84%D0%B8%D1%86%D0%B8%D0%B0%D0%BB%D1%8C%D0%BD%D0%BE%D0%BC+%D1%81%D0%B0%D0%B9te+%D1%83%D0%BD%D0%B8%D0%B2%D0%B5%D1%80%D1%81%D0%B8%D1%82%D0%B5%D1%82%D0%B0+%D0%B2+%D1%80%D0%B0%D0%B7%D0%B4%D0%B5%D0%BB%D0%B5+%22%D0%A0%D0%B0%D1%81%D0%BF%D0%B8%D1%81%D0%B0%D0%BD%D0%B8%D1%8F%22+%D0%B8%D0%BB%D0%B8+%D0%BF%D0%BE%D1%81%D0%B5%D1%82%D0%B8%D1%82%D1%8C+%D1%81%D0%BB%D0%B5%D0%B4%D1%83%D1%8E%D1%89%D1%83%D1%8E+%D1%81%D1%81%D1%8B%D0%BB&amp;url=https%3A//www.csu.ru/%3Ferid%3D2SDnjdu1GrF&amp;l10n=ru&amp;mime=html&amp;sign=70cb8f5ac37aef23d37b9e9903994ce7&amp;keyno=0</saved-copy-url>
+<url>https://www.csu.ru/?erid=2SDnjdu1GrF</url>
+<domain>www.csu.ru</domain>
+<title><hlword>Челябинский</hlword> <hlword>государственный</hlword> <hlword>университет</hlword> (<hlword>ЧелГУ</hlword>)</title>
+<modtime>20241210T141750</modtime>
+<size>6041</size>
 <charset>utf-8</charset>
 <mime-type>text/html</mime-type>
 <passages>
-<passage>Ознакомьтесь с наилучшими идеями на тему «<hlword>Авы</hlword> топовые» от Pinterest.</passage>
+<passage><hlword>Официальный</hlword> сайт <hlword>Челябинского</hlword> <hlword>государственного</hlword> <hlword>университета</hlword>. ФГБОУ ВО <hlword>ЧелГУ</hlword> - высшее учебное заведение в Челябинске.</passage>
+</passages>
+<properties>
+<_PassagesType>0</_PassagesType>
+<lang>ru</lang>
+<extended-text>Официальный сайт Челябинского государственного университета. ФГБОУ ВО ЧелГУ - высшее учебное заведение в Челябинске. Задайте вопрос о поступлении на сайте!</extended-text>
+</properties>
+</doc>
+</group>
+<group>
+<doccount>1</doccount>
+<relevance priority="all"/>
+<doc id="Z7F83FA3CBAA303C3">
+<relevance priority="all"/>
+<saved-copy-url>https://yandexwebcache.net/yandbtm?fmode=inject&amp;tm=1733908927&amp;tld=ru&amp;lang=ru&amp;la=1733885952&amp;text=%D0%97%D0%B0%D0%BF%D1%80%D0%BE%D1%81%D0%B8%D1%82%D1%8C+%D1%80%D0%B0%D1%81%D0%BF%D0%B8%D1%81%D0%BE%D0%BA+%D0%B7%D0%B2%D0%BE%D0%BD%D0%BA%D0%BE%D0%B2+%D0%A7%D0%B5%D0%BB%D0%93%D0%A3+%D0%BC%D0%BE%D0%B6%D0%BD%D0%BE+%D0%BD%D0%B0+%D0%BE%D1%84%D0%B8%D1%86%D0%B8%D0%B0%D0%BB%D1%8C%D0%BD%D0%BE%D0%BC+%D1%81%D0%B0%D0%B9te+%D1%83%D0%BD%D0%B8%D0%B2%D0%B5%D1%80%D1%81%D0%B8%D1%82%D0%B5%D1%82%D0%B0+%D0%B2+%D1%80%D0%B0%D0%B7%D0%B4%D0%B5%D0%BB%D0%B5+%22%D0%A0%D0%B0%D1%81%D0%BF%D0%B8%D1%81%D0%B0%D0%BD%D0%B8%D1%8F%22+%D0%B8%D0%BB%D0%B8+%D0%BF%D0%BE%D1%81%D0%B5%D1%82%D0%B8%D1%82%D1%8C+%D1%81%D0%BB%D0%B5%D0%B4%D1%83%D1%8E%D1%89%D1%83%D1%8E+%D1%81%D1%81%D1%8B%D0%BB&amp;url=https%3A//www.csu.ru/Pages/visitPay.aspx&amp;l10n=ru&amp;mime=html&amp;sign=6648bf669283fe0d8086f07646c0622a&amp;keyno=0</saved-copy-url>
+<url>https://www.csu.ru/Pages/visitPay.aspx</url>
+<domain>www.csu.ru</domain>
+<title><hlword>Челябинский</hlword> <hlword>государственный</hlword> <hlword>университет</hlword> - visitPay</title>
+<modtime>20200805T030000</modtime>
+<size>2087</size>
+<charset>utf-8</charset>
+<mime-type>text/html</mime-type>
+<passages>
+<passage>Оплатить не выходя из дома обучение в <hlword>Челябинском</hlword> <hlword>государственном</hlword> <hlword>университете</hlword> <hlword>можно</hlword> через личный кабинет студента на сайте <hlword>университета</hlword>.</passage>
+</passages>
+<properties>
+<_PassagesType>0</_PassagesType>
+<lang>ru</lang>
+<extended-text>Федеральное государственное бюджетное образовательное учреждение высшего образования «Челябинский государственный университет» Сокращенное наименование — ФГБОУ ВО «ЧелГУ» Дата основания — 4 октября 1976 года Международное наименование — Chelyabinsk State University Сайт — www.csu.ru Юридический и фактический адрес ФГБОУ ВО &quot;ЧелГУ&quot;: 454001, г. Челябинск, ул. Братьев Кашириных, 129 Приемная ректора: +7 (351) 799-71-01; Факс: +7 (351) 742-09-25 E-mail: odou@csu.ru.</extended-text>
+</properties>
+</doc>
+</group>
+<group>
+<doccount>1</doccount>
+<relevance priority="all"/>
+<doc id="Z5F8ACB22F7ED6A2D">
+<relevance priority="all"/>
+<saved-copy-url>https://yandexwebcache.net/yandbtm?fmode=inject&amp;tm=1733908927&amp;tld=ru&amp;lang=ru&amp;la=1733069824&amp;text=%D0%97%D0%B0%D0%BF%D1%80%D0%BE%D1%81%D0%B8%D1%82%D1%8C+%D1%80%D0%B0%D1%81%D0%BF%D0%B8%D1%81%D0%BE%D0%BA+%D0%B7%D0%B2%D0%BE%D0%BD%D0%BA%D0%BE%D0%B2+%D0%A7%D0%B5%D0%BB%D0%93%D0%A3+%D0%BC%D0%BE%D0%B6%D0%BD%D0%BE+%D0%BD%D0%B0+%D0%BE%D1%84%D0%B8%D1%86%D0%B8%D0%B0%D0%BB%D1%8C%D0%BD%D0%BE%D0%BC+%D1%81%D0%B0%D0%B9te+%D1%83%D0%BD%D0%B8%D0%B2%D0%B5%D1%80%D1%81%D0%B8%D1%82%D0%B5%D1%82%D0%B0+%D0%B2+%D1%80%D0%B0%D0%B7%D0%B4%D0%B5%D0%BB%D0%B5+%22%D0%A0%D0%B0%D1%81%D0%BF%D0%B8%D1%81%D0%B0%D0%BD%D0%B8%D1%8F%22+%D0%B8%D0%BB%D0%B8+%D0%BF%D0%BE%D1%81%D0%B5%D1%82%D0%B8%D1%82%D1%8C+%D1%81%D0%BB%D0%B5%D0%B4%D1%83%D1%8E%D1%89%D1%83%D1%8E+%D1%81%D1%81%D1%8B%D0%BB&amp;url=https%3A//www.csu.ru/faculties/flip/general-flip/for%2520students/flip_timetable.aspx&amp;l10n=ru&amp;mime=html&amp;sign=7a00c1862d8859ae51e138c36fbe2397&amp;keyno=0</saved-copy-url>
+<url>https://www.csu.ru/faculties/flip/general-flip/for%20students/flip_timetable.aspx</url>
+<domain>www.csu.ru</domain>
+<title>Факультеты, институты - flip_timetable</title>
+<modtime>20240915T084844</modtime>
+<size>6233</size>
+<charset>utf-8</charset>
+<mime-type>text/html</mime-type>
+<passages>
+<passage>История <hlword>университета</hlword>. 40-летие <hlword>ЧелГУ</hlword>.</passage>
+</passages>
+<properties>
+<_PassagesType>0</_PassagesType>
+<lang>ru</lang>
+<extended-text>general-flip/Structure/Guest_teachers. kaf_TiPP_staff/18. Об университете. Сведения об образовательной организации. Вакантные места для приема (перевода) обучающихся.</extended-text>
+</properties>
+</doc>
+</group>
+<group>
+<doccount>1</doccount>
+<relevance priority="all"/>
+<doc id="Z8166710C817652C3">
+<relevance priority="all"/>
+<saved-copy-url>https://yandexwebcache.net/yandbtm?fmode=inject&amp;tm=1733908927&amp;tld=ru&amp;lang=ru&amp;la=1733123456&amp;text=%D0%97%D0%B0%D0%BF%D1%80%D0%BE%D1%81%D0%B8%D1%82%D1%8C+%D1%80%D0%B0%D1%81%D0%BF%D0%B8%D1%81%D0%BE%D0%BA+%D0%B7%D0%B2%D0%BE%D0%BD%D0%BA%D0%BE%D0%B2+%D0%A7%D0%B5%D0%BB%D0%93%D0%A3+%D0%BC%D0%BE%D0%B6%D0%BD%D0%BE+%D0%BD%D0%B0+%D0%BE%D1%84%D0%B8%D1%86%D0%B8%D0%B0%D0%BB%D1%8C%D0%BD%D0%BE%D0%BC+%D1%81%D0%B0%D0%B9te+%D1%83%D0%BD%D0%B8%D0%B2%D0%B5%D1%80%D1%81%D0%B8%D1%82%D0%B5%D1%82%D0%B0+%D0%B2+%D1%80%D0%B0%D0%B7%D0%B4%D0%B5%D0%BB%D0%B5+%22%D0%A0%D0%B0%D1%81%D0%BF%D0%B8%D1%81%D0%B0%D0%BD%D0%B8%D1%8F%22+%D0%B8%D0%BB%D0%B8+%D0%BF%D0%BE%D1%81%D0%B5%D1%82%D0%B8%D1%82%D1%8C+%D1%81%D0%BB%D0%B5%D0%B4%D1%83%D1%8E%D1%89%D1%83%D1%8E+%D1%81%D1%81%D1%8B%D0%BB&amp;url=https%3A//www.csu.ru/roles/students/obuchenie_sluzheniem.aspx&amp;l10n=ru&amp;mime=html&amp;sign=af6b292171cb6e3a0ff84ec1706f0247&amp;keyno=0</saved-copy-url>
+<url>https://www.csu.ru/roles/students/obuchenie_sluzheniem.aspx</url>
+<domain>www.csu.ru</domain>
+<title><hlword>Челябинский</hlword> <hlword>государственный</hlword> <hlword>университет</hlword>...</title>
+<modtime>20240926T123045</modtime>
+<size>6144</size>
+<charset>utf-8</charset>
+<mime-type>text/html</mime-type>
+<passages>
+<passage>История <hlword>университета</hlword>. 40-летие <hlword>ЧелГУ</hlword>.</passage>
+</passages>
+<properties>
+<_PassagesType>0</_PassagesType>
+<lang>ru</lang>
+<extended-text>История университета. 40-летие ЧелГУ. Видеоархив. Видеопоздравления.</extended-text>
+</properties>
+</doc>
+</group>
+<group>
+<doccount>1</doccount>
+<relevance priority="all"/>
+<doc id="ZF7EC01278C038908">
+<relevance priority="all"/>
+<saved-copy-url>https://yandexwebcache.net/yandbtm?fmode=inject&amp;tm=1733908927&amp;tld=ru&amp;lang=ru&amp;la=1733065856&amp;text=%D0%97%D0%B0%D0%BF%D1%80%D0%BE%D1%81%D0%B8%D1%82%D1%8C+%D1%80%D0%B0%D1%81%D0%BF%D0%B8%D1%81%D0%BE%D0%BA+%D0%B7%D0%B2%D0%BE%D0%BD%D0%BA%D0%BE%D0%B2+%D0%A7%D0%B5%D0%BB%D0%93%D0%A3+%D0%BC%D0%BE%D0%B6%D0%BD%D0%BE+%D0%BD%D0%B0+%D0%BE%D1%84%D0%B8%D1%86%D0%B8%D0%B0%D0%BB%D1%8C%D0%BD%D0%BE%D0%BC+%D1%81%D0%B0%D0%B9te+%D1%83%D0%BD%D0%B8%D0%B2%D0%B5%D1%80%D1%81%D0%B8%D1%82%D0%B5%D1%82%D0%B0+%D0%B2+%D1%80%D0%B0%D0%B7%D0%B4%D0%B5%D0%BB%D0%B5+%22%D0%A0%D0%B0%D1%81%D0%BF%D0%B8%D1%81%D0%B0%D0%BD%D0%B8%D1%8F%22+%D0%B8%D0%BB%D0%B8+%D0%BF%D0%BE%D1%81%D0%B5%D1%82%D0%B8%D1%82%D1%8C+%D1%81%D0%BB%D0%B5%D0%B4%D1%83%D1%8E%D1%89%D1%83%D1%8E+%D1%81%D1%81%D1%8B%D0%BB&amp;url=https%3A//www.csu.ru/SitePages/DOT.aspx&amp;l10n=ru&amp;mime=html&amp;sign=360173c6e5752769047ac7764af5d286&amp;keyno=0</saved-copy-url>
+<url>https://www.csu.ru/SitePages/DOT.aspx</url>
+<domain>www.csu.ru</domain>
+<title><hlword>Челябинский</hlword> <hlword>государственный</hlword> <hlword>университет</hlword> - DOT</title>
+<modtime>20200320T122908</modtime>
+<size>7096</size>
+<charset>utf-8</charset>
+<mime-type>text/html</mime-type>
+<passages>
+<passage>Напоминаем, что в <hlword>Челябинской</hlword> области действуют ограничения на проведение спортивных, зрелищных, публичных и иных мероприятий с числом участников более 50 человек.</passage>
+</passages>
+<properties>
+<_PassagesType>0</_PassagesType>
+<lang>ru</lang>
+<extended-text>Конец 2019-2020 учебного года студенты нашего университета находились на дистанционном обучении. Здесь мы рассказываем о том, как была организована эта работа .</extended-text>
+</properties>
+</doc>
+</group>
+<group>
+<doccount>1</doccount>
+<relevance priority="all"/>
+<doc id="Z628ACE37A1FDF860">
+<relevance priority="all"/>
+<saved-copy-url>https://yandexwebcache.net/yandbtm?fmode=inject&amp;tm=1733908927&amp;tld=ru&amp;lang=ru&amp;la=1733800448&amp;text=%D0%97%D0%B0%D0%BF%D1%80%D0%BE%D1%81%D0%B8%D1%82%D1%8C+%D1%80%D0%B0%D1%81%D0%BF%D0%B8%D1%81%D0%BE%D0%BA+%D0%B7%D0%B2%D0%BE%D0%BD%D0%BA%D0%BE%D0%B2+%D0%A7%D0%B5%D0%BB%D0%93%D0%A3+%D0%BC%D0%BE%D0%B6%D0%BD%D0%BE+%D0%BD%D0%B0+%D0%BE%D1%84%D0%B8%D1%86%D0%B8%D0%B0%D0%BB%D1%8C%D0%BD%D0%BE%D0%BC+%D1%81%D0%B0%D0%B9te+%D1%83%D0%BD%D0%B8%D0%B2%D0%B5%D1%80%D1%81%D0%B8%D1%82%D0%B5%D1%82%D0%B0+%D0%B2+%D1%80%D0%B0%D0%B7%D0%B4%D0%B5%D0%BB%D0%B5+%22%D0%A0%D0%B0%D1%81%D0%BF%D0%B8%D1%81%D0%B0%D0%BD%D0%B8%D1%8F%22+%D0%B8%D0%BB%D0%B8+%D0%BF%D0%BE%D1%81%D0%B5%D1%82%D0%B8%D1%82%D1%8C+%D1%81%D0%BB%D0%B5%D0%B4%D1%83%D1%8E%D1%89%D1%83%D1%8E+%D1%81%D1%81%D1%8B%D0%BB&amp;url=https%3A//www.csu.ru/management/feu/Details.aspx&amp;l10n=ru&amp;mime=html&amp;sign=952e7dd06b878af5a9b3e0329855ff5b&amp;keyno=0</saved-copy-url>
+<url>https://www.csu.ru/management/feu/Details.aspx</url>
+<domain>www.csu.ru</domain>
+<title>Реквизиты <hlword>университета</hlword> — <hlword>Челябинский</hlword> <hlword>государственный</hlword>...</title>
+<modtime>20151202T232442</modtime>
+<size>6425</size>
+<charset>utf-8</charset>
+<mime-type>text/html</mime-type>
+<passages>
+<passage>ФГБОУ ВО «<hlword>ЧелГУ</hlword>» заключены договора с нижепредставленными банками о приеме платежей от физических лиц.</passage>
+</passages>
+<properties>
+<_PassagesType>0</_PassagesType>
+<lang>ru</lang>
+<extended-text>ФГБОУ ВО «ЧелГУ» заключены договора с нижепредставленными банками о приеме платежей от физических лиц. Данные банки имеют информацию о реквизитах ФГБОУ ВО «ЧелГУ» , что облегчает платеж (ВАЖНО сообщать корректный номер договора на оказание платных образовательных услуг по которому производится оплата): 1. ПАО «ЧЕЛИНДБАНК» 2. ПАО «Челябинвестбанк» 3. ПАО «Сбербанк России» 4. ОАО «СКБ-банк» 5. ООО БАНК «Курган».</extended-text>
+</properties>
+</doc>
+</group>
+<group>
+<doccount>1</doccount>
+<relevance priority="all"/>
+<doc id="Z9BC2F84812B8CF46">
+<relevance priority="all"/>
+<saved-copy-url>https://yandexwebcache.net/yandbtm?fmode=inject&amp;tm=1733908927&amp;tld=ru&amp;lang=ru&amp;la=1733226880&amp;text=%D0%97%D0%B0%D0%BF%D1%80%D0%BE%D1%81%D0%B8%D1%82%D1%8C+%D1%80%D0%B0%D1%81%D0%BF%D0%B8%D1%81%D0%BE%D0%BA+%D0%B7%D0%B2%D0%BE%D0%BD%D0%BA%D0%BE%D0%B2+%D0%A7%D0%B5%D0%BB%D0%93%D0%A3+%D0%BC%D0%BE%D0%B6%D0%BD%D0%BE+%D0%BD%D0%B0+%D0%BE%D1%84%D0%B8%D1%86%D0%B8%D0%B0%D0%BB%D1%8C%D0%BD%D0%BE%D0%BC+%D1%81%D0%B0%D0%B9te+%D1%83%D0%BD%D0%B8%D0%B2%D0%B5%D1%80%D1%81%D0%B8%D1%82%D0%B5%D1%82%D0%B0+%D0%B2+%D1%80%D0%B0%D0%B7%D0%B4%D0%B5%D0%BB%D0%B5+%22%D0%A0%D0%B0%D1%81%D0%BF%D0%B8%D1%81%D0%B0%D0%BD%D0%B8%D1%8F%22+%D0%B8%D0%BB%D0%B8+%D0%BF%D0%BE%D1%81%D0%B5%D1%82%D0%B8%D1%82%D1%8C+%D1%81%D0%BB%D0%B5%D0%B4%D1%83%D1%8E%D1%89%D1%83%D1%8E+%D1%81%D1%81%D1%8B%D0%BB&amp;url=https%3A//mozgstudent.ru/articles/raspisanie-chelgu/&amp;l10n=ru&amp;mime=html&amp;sign=9e779ab91882dd50880e6b590613162d&amp;keyno=0</saved-copy-url>
+<url>https://mozgstudent.ru/articles/raspisanie-chelgu/</url>
+<domain>mozgstudent.ru</domain>
+<title>Расписание <hlword>ЧелГУ</hlword> 2024</title>
+<modtime>20211213T180046</modtime>
+<size>702</size>
+<charset>utf-8</charset>
+<mime-type>text/html</mime-type>
+<passages>
+<passage><hlword>На</hlword> <hlword>официальном</hlword> <hlword>сайте</hlword> <hlword>Челябинского</hlword> <hlword>государственного</hlword> <hlword>университета</hlword> <hlword>можно</hlword> ознакомиться с расписанием учебных групп.</passage>
 </passages>
 <properties>
 <_PassagesType>0</_PassagesType>
@@ -104,145 +248,13 @@
 </properties>
 </doc>
 </group>
-<group>
-<doccount>1</doccount>
-<relevance priority="all"/>
-<doc touchdown="РКН: сайт нарушает закон РФ" id="Z47A5FD462EC6C055">
-<relevance priority="all"/>
-<saved-copy-url>https://yandexwebcache.net/yandbtm?fmode=inject&amp;tm=1733816959&amp;tld=ru&amp;lang=ru&amp;la=1733060096&amp;text=%D0%B0%D0%B2%D1%8B&amp;url=https%3A//ru.pinterest.com/ideas/%25D0%25B4%25D0%25BB%25D1%258F-%25D0%25B0%25D0%25B2%25D1%258B-%25D0%25B2%25D0%25BA/941598242712/&amp;l10n=ru&amp;mime=html&amp;sign=d312e453f9fa593e22e3fc48e31567e9&amp;keyno=0</saved-copy-url>
-<url>https://ru.pinterest.com/ideas/%D0%B4%D0%BB%D1%8F-%D0%B0%D0%B2%D1%8B-%D0%B2%D0%BA/941598242712/</url>
-<domain>ru.pinterest.com</domain>
-<title>Для <hlword>Авы</hlword> Вк</title>
-<modtime>20231121T040840</modtime>
-<size>1428</size>
-<charset>utf-8</charset>
-<mime-type>text/html</mime-type>
-<passages>
-<passage>Ознакомьтесь с наилучшими идеями на тему «Для <hlword>авы</hlword> вк» от Pinterest.</passage>
-</passages>
-<properties>
-<_PassagesType>0</_PassagesType>
-<lang>ru</lang>
-</properties>
-</doc>
-</group>
-<group>
-<doccount>1</doccount>
-<relevance priority="all"/>
-<doc touchdown="РКН: сайт нарушает закон РФ" id="Z8DD68D7F302CB6C7">
-<relevance priority="all"/>
-<saved-copy-url>https://yandexwebcache.net/yandbtm?fmode=inject&amp;tm=1733816959&amp;tld=ru&amp;lang=ru&amp;la=1733107968&amp;text=%D0%B0%D0%B2%D1%8B&amp;url=https%3A//ru.pinterest.com/ideas/%25D1%2584%25D0%25BE%25D1%2582%25D0%25BE-%25D0%25BD%25D0%25B0-%25D0%25B0%25D0%25B2%25D1%2583/920160112067/&amp;l10n=ru&amp;mime=html&amp;sign=997e938641d8f31de7cec87caad516b9&amp;keyno=0</saved-copy-url>
-<url>https://ru.pinterest.com/ideas/%D1%84%D0%BE%D1%82%D0%BE-%D0%BD%D0%B0-%D0%B0%D0%B2%D1%83/920160112067/</url>
-<domain>ru.pinterest.com</domain>
-<title>Pinterest — Фото На <hlword>Аву</hlword></title>
-<modtime>20230721T160811</modtime>
-<size>839</size>
-<charset>utf-8</charset>
-<mime-type>text/html</mime-type>
-<passages>
-<passage>Ознакомьтесь с наилучшими идеями на тему «Фото на <hlword>аву</hlword>» от Pinterest.</passage>
-</passages>
-<properties>
-<_PassagesType>0</_PassagesType>
-<lang>ru</lang>
-</properties>
-</doc>
-</group>
-<group>
-<doccount>1</doccount>
-<relevance priority="all"/>
-<doc touchdown="РКН: сайт нарушает закон РФ" id="ZDE4AD64501AD306D">
-<relevance priority="all"/>
-<saved-copy-url>https://yandexwebcache.net/yandbtm?fmode=inject&amp;tm=1733816959&amp;tld=ru&amp;lang=ru&amp;la=1733110656&amp;text=%D0%B0%D0%B2%D1%8B&amp;url=https%3A//ru.pinterest.com/ideas/%25D1%2582%25D0%25BE%25D0%25BF-%25D0%25B0%25D0%25B2%25D0%25B0%25D1%2582%25D0%25B0%25D1%2580%25D0%25BA%25D0%25B8/916219657943/&amp;l10n=ru&amp;mime=html&amp;sign=8d3bd69b6a217eb781eec41e94b0a03b&amp;keyno=0</saved-copy-url>
-<url>https://ru.pinterest.com/ideas/%D1%82%D0%BE%D0%BF-%D0%B0%D0%B2%D0%B0%D1%82%D0%B0%D1%80%D0%BA%D0%B8/916219657943/</url>
-<domain>ru.pinterest.com</domain>
-<title>Pinterest — Топ Аватарки</title>
-<modtime>20230510T182158</modtime>
-<size>1105</size>
-<charset>utf-8</charset>
-<mime-type>text/html</mime-type>
-<passages>
-<passage>Аватарки <hlword>Ава</hlword>, Аватарки, Том, Топ, Старинный Мультфильм.</passage>
-</passages>
-<properties>
-<_PassagesType>0</_PassagesType>
-<lang>ru</lang>
-</properties>
-</doc>
-</group>
-<group>
-<doccount>1</doccount>
-<relevance priority="all"/>
-<doc touchdown="РКН: сайт нарушает закон РФ" id="ZE13265FF3C73B695">
-<relevance priority="all"/>
-<saved-copy-url>https://yandexwebcache.net/yandbtm?fmode=inject&amp;tm=1733816959&amp;tld=ru&amp;lang=ru&amp;la=1732892544&amp;text=%D0%B0%D0%B2%D1%8B&amp;url=https%3A//ru.pinterest.com/ideas/%25D1%258D%25D1%2581%25D1%2582%25D0%25B5%25D1%2582%25D0%25B8%25D1%2587%25D0%25BD%25D1%258B%25D0%25B5-%25D0%25B0%25D0%25B2%25D1%258B/952604943830/&amp;l10n=ru&amp;mime=html&amp;sign=6adde8190ec45f6282a15e8307ba0fe7&amp;keyno=0</saved-copy-url>
-<url>https://ru.pinterest.com/ideas/%D1%8D%D1%81%D1%82%D0%B5%D1%82%D0%B8%D1%87%D0%BD%D1%8B%D0%B5-%D0%B0%D0%B2%D1%8B/952604943830/</url>
-<domain>ru.pinterest.com</domain>
-<title>Pinterest — Эстетичные <hlword>Авы</hlword></title>
-<modtime>20230721T161533</modtime>
-<size>1227</size>
-<charset>utf-8</charset>
-<mime-type>text/html</mime-type>
-<passages>
-<passage>Ознакомьтесь с наилучшими идеями на тему «Эстетичные <hlword>авы</hlword>» от Pinterest.</passage>
-</passages>
-<properties>
-<_PassagesType>0</_PassagesType>
-<lang>ru</lang>
-</properties>
-</doc>
-</group>
-<group>
-<doccount>1</doccount>
-<relevance priority="all"/>
-<doc touchdown="РКН: сайт нарушает закон РФ" id="Z601E7B0ECFC277C9">
-<relevance priority="all"/>
-<saved-copy-url>https://yandexwebcache.net/yandbtm?fmode=inject&amp;tm=1733816959&amp;tld=ru&amp;lang=ru&amp;la=1733070208&amp;text=%D0%B0%D0%B2%D1%8B&amp;url=https%3A//ru.pinterest.com/ideas/%25D0%25BA%25D1%2580%25D1%2583%25D1%2582%25D1%258B%25D0%25B5-%25D0%25B0%25D0%25B2%25D0%25B0%25D1%2582%25D0%25B0%25D1%2580%25D0%25BA%25D0%25B8/898883817191/&amp;l10n=ru&amp;mime=html&amp;sign=c12243ecd1c1796e493bc27890a20070&amp;keyno=0</saved-copy-url>
-<url>https://ru.pinterest.com/ideas/%D0%BA%D1%80%D1%83%D1%82%D1%8B%D0%B5-%D0%B0%D0%B2%D0%B0%D1%82%D0%B0%D1%80%D0%BA%D0%B8/898883817191/</url>
-<domain>ru.pinterest.com</domain>
-<title>Pinterest — Крутые Аватарки</title>
-<modtime>20231121T040548</modtime>
-<size>1305</size>
-<charset>utf-8</charset>
-<mime-type>text/html</mime-type>
-<passages>
-<passage>Для Аватарки В Инстаграм, <hlword>Авы</hlword> Лунтик, Крутые <hlword>Авы</hlword> В Лайк, Аватарки Мультики...</passage>
-</passages>
-<properties>
-<_PassagesType>0</_PassagesType>
-<lang>ru</lang>
-</properties>
-</doc>
-</group>
-<group>
-<doccount>1</doccount>
-<relevance priority="all"/>
-<doc touchdown="РКН: сайт нарушает закон РФ" id="Z065698F2B28E0728">
-<relevance priority="all"/>
-<saved-copy-url>https://yandexwebcache.net/yandbtm?fmode=inject&amp;tm=1733816959&amp;tld=ru&amp;lang=ru&amp;la=1733042688&amp;text=%D0%B0%D0%B2%D1%8B&amp;url=https%3A//ru.pinterest.com/ideas/%25D0%25BA%25D0%25BE%25D0%25BC%25D1%2584%25D0%25BE%25D1%2580%25D1%2582%25D0%25BD%25D1%258B%25D0%25B5-%25D0%25B0%25D0%25B2%25D1%258B/956896375165/&amp;l10n=ru&amp;mime=html&amp;sign=e20702b9996d77a7273a706808890ad2&amp;keyno=0</saved-copy-url>
-<url>https://ru.pinterest.com/ideas/%D0%BA%D0%BE%D0%BC%D1%84%D0%BE%D1%80%D1%82%D0%BD%D1%8B%D0%B5-%D0%B0%D0%B2%D1%8B/956896375165/</url>
-<domain>ru.pinterest.com</domain>
-<title>Pinterest — Комфортные <hlword>Авы</hlword></title>
-<modtime>20231121T041925</modtime>
-<size>1170</size>
-<charset>utf-8</charset>
-<mime-type>text/html</mime-type>
-<passages>
-<passage>Ознакомьтесь с наилучшими идеями на тему «Комфортные <hlword>авы</hlword>» от Pinterest.</passage>
-</passages>
-<properties>
-<_PassagesType>0</_PassagesType>
-<lang>ru</lang>
-</properties>
-</doc>
-</group>
-<found priority="phrase">3849</found>
-<found priority="strict">3849</found>
-<found priority="all">3849</found>
-<found-docs priority="phrase">5744</found-docs>
-<found-docs priority="strict">5744</found-docs>
-<found-docs priority="all">5744</found-docs>
-<found-docs-human>нашёл 6 тыс. ответов</found-docs-human>
+<found priority="phrase">5188</found>
+<found priority="strict">5188</found>
+<found priority="all">5188</found>
+<found-docs priority="phrase">5297</found-docs>
+<found-docs priority="strict">5297</found-docs>
+<found-docs priority="all">5297</found-docs>
+<found-docs-human>нашёл 5 тыс. ответов</found-docs-human>
 </grouping>
 </results>
 </response>

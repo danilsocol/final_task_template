@@ -5,11 +5,7 @@ from typing import List, Optional
 import logging
 import gc
 from dataclasses import dataclass
-from datetime import datetime
-from pydantic import BaseModel, Field
-import asyncio
-from fastapi import HTTPException
-from tqdm import tqdm
+from helpers.researchAPIv1 import fetch_yandex_search_results, parse_xml_data
 
 logger = logging.getLogger(__name__)
 
@@ -17,7 +13,7 @@ logger = logging.getLogger(__name__)
 class ModelConfig:
     temperature: float = 0.7
     top_p: float = 0.9
-    max_tokens: int = 500
+    max_tokens: int = 1024
     context_window: int = 2048
     model_id: str = "mistralai/Mistral-7B-Instruct-v0.3"
 
@@ -51,20 +47,120 @@ class MLModel:
             logger.error(f"Ошибка при инициализации модели: {str(e)}")
             raise
 
-    def generate_response(self, messages: List[ChatMessage]) -> str:
-        if not self._is_initialized:
-            logger.error("Попытка использовать неинициализированную модель")
-            raise RuntimeError("Модель не инициализирована")
-
+    async def generate_search_query(self, user_message: str) -> str:
+        """Генерирует поисковый запрос на основе сообщения пользователя"""
         try:
-            # Получаем длину входного контекста
+            system_prompt = ChatMessage(
+                role="system",
+                content="""You are a public relations manager at Chelyabinsk State University. 
+                Your task is: 
+                1. Answer questions about the university and its programs 
+                2. Use mainly Russian language 
+                3. Be polite and professional 
+                4. Provide accurate information 
+                5. If necessary, clarify the details of the issue
+                6. Include relevant links from the provided context in your response
+                7. Keep responses short and structured
+                
+                Response format:
+                - Do not use the prefixes 'user:' or 'bot:'
+                - Respond in a structured way
+                - Use the official communication style
+                - Include relevant links when available
+                - Do not repeat the same information"""
+            )
+            user_prompt = ChatMessage(
+                role="user",
+                content=f"Сформулируйте поисковый запрос для вопроса: {user_message}"
+            )
+            
             inputs = self.tokenizer.apply_chat_template(
-                messages,
+                [system_prompt, user_prompt],
                 add_generation_prompt=True,
                 return_tensors="pt"
             )
             input_length = inputs.shape[1]
             
+            attention_mask = torch.ones_like(inputs)
+            inputs = inputs.to(self.model.device)
+            attention_mask = attention_mask.to(self.model.device)
+
+            with torch.no_grad():
+                outputs = self.model.generate(
+                    inputs,
+                    attention_mask=attention_mask,
+                    max_new_tokens=50,  # Ограничиваем длину запроса
+                    temperature=0.3,    # Делаем генерацию более детерминированной
+                    top_p=0.9,
+                    do_sample=True,
+                    pad_token_id=self.tokenizer.pad_token_id,
+                    repetition_penalty=1.2,
+                    no_repeat_ngram_size=2,
+                    use_cache=True
+                )
+            
+            query = self.tokenizer.decode(outputs[0][input_length:], skip_special_tokens=True)
+            logger.info(f"Сгенерированный поисковый запрос: {query}")
+            
+            return query.strip()
+            
+        except Exception as e:
+            logger.error(f"Ошибка при генерации поискового запроса: {str(e)}")
+            return f"ЧелГУ {user_message[:50]}" 
+
+    async def get_search_context(self, user_message: str) -> str:
+        try:
+            # Генерируем поисковый запрос
+            search_query = await self.generate_search_query(user_message)
+            
+            # Получаем результаты поиска
+            xml = fetch_yandex_search_results(search_query)
+            results = parse_xml_data(xml)
+            
+            # Форматируем результаты в контекст
+            context = "Релевантные источники:\n"
+            for result in results[:3]:  # Берем только топ-3 результата
+                context += f"- {result['title']}\n  Ссылка: {result['url']}\n"
+                if result['headline']:
+                    context += f"  Краткое содержание: {result['headline']}\n"
+            
+            return context
+        except Exception as e:
+            logger.error(f"Ошибка при получении контекста поиска: {str(e)}")
+            return ""
+
+    async def generate_response(self, messages: List[ChatMessage]) -> str:
+        if not self._is_initialized:
+            logger.error("Попытка использовать неинициализированную модель")
+            raise RuntimeError("Модель не инициализирована")
+
+        try:
+            user_message = messages[-1].content
+            search_context = await self.get_search_context(user_message)
+            logger.info(f"Получен поисковый контекст: {search_context}")
+            
+            system_message = ChatMessage(
+                role="system",
+                content=f"""Вы - менеджер по связям с общественностью Челябинского государственного университета. 
+                
+                Используйте следующую информацию при ответе:
+                {search_context}
+                
+                Формат ответа:
+                1. Дайте краткий и информативный ответ на вопрос пользователя
+                2. Не включайте ссылки в ответ, они будут добавлены автоматически
+                3. Используйте только достоверную информацию из контекста"""
+            )
+            
+            messages_with_context = [system_message] + messages
+            
+            inputs = self.tokenizer.apply_chat_template(
+                messages_with_context,
+                add_generation_prompt=True,
+                return_tensors="pt"
+            )
+            
+            input_length = inputs.shape[1]
             attention_mask = torch.ones_like(inputs)
             inputs = inputs.to(self.model.device)
             attention_mask = attention_mask.to(self.model.device)
@@ -80,17 +176,18 @@ class MLModel:
                     do_sample=True,
                     pad_token_id=self.tokenizer.pad_token_id,
                     repetition_penalty=1.2,
-                    no_repeat_ngram_size=3
+                    no_repeat_ngram_size=3,
+                    use_cache=True
                 )
                 logger.info("Генерация завершена")
             
-            # Декодируем только новые токены, отбрасывая входной контекст
             response = self.tokenizer.decode(outputs[0][input_length:], skip_special_tokens=True)
-            logger.info(f"Новый ответ от модели: {response}")
             
-            return response.strip()
-
+            # Добавляем релевантные источники к ответу
+            final_response = f"{response.strip()}\n{search_context}"
             
+            return final_response
+                
         except Exception as e:
             logger.error(f"Ошибка при генерации ответа: {str(e)}")
             raise

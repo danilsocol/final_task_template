@@ -1,0 +1,15 @@
+* text=auto eol=lf
+* py=auto eol=lf
+* json=auto eol=lf
+* md=auto eol=lf
+* html=auto eol=lf
+* css=auto eol=lf
+* js=auto eol=lf
+* xml=auto eol=lf
+* yaml=auto eol=lf
+* toml=auto eol=lf
+* ini=auto eol=lf
+* env=auto eol=lf
+* sh=auto eol=lf
+* bat=auto eol=lf
+* ps1=auto eol=lf

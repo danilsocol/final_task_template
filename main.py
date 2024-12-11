@@ -1,5 +1,4 @@
 import json
-import os
 import argparse
 import asyncio
 from concurrent.futures import ThreadPoolExecutor
@@ -8,22 +7,19 @@ import uuid
 from contextlib import asynccontextmanager
 import logging
 from datetime import datetime, timedelta
-import re
 
-from fastapi import FastAPI, Request, requests, Query, HTTPException
+from fastapi import FastAPI, Query, HTTPException
 from fastapi.responses import HTMLResponse
 from fastapi.staticfiles import StaticFiles
-from pydantic import BaseModel
 from typing import Dict, List
 from datetime import datetime
 
 from helpers.researchAPIv1 import fetch_yandex_search_results, parse_xml_data
 from models.news_item import NewsItem
-from models.search import SearchResult, SearchRequest
+from models.search import SearchResult
 from parser.news_parser import NewsParser
-from models.local_ml import MLModel
 from models.message import Message, ChatMessage, ChatHistory, ChatHistoryForModel
-
+from models.local_ml import MLModel
 
 # Константы
 MAX_HISTORY_LENGTH = 10
@@ -65,12 +61,10 @@ def parse_arguments():
 
 @asynccontextmanager
 async def lifespan(app: FastAPI):
-    # Инициализация модели при запуске
     try:
-        ml_model.initialize()
+        await asyncio.to_thread(ml_model.initialize)
         yield
     finally:
-        # Очистка при завершении
         ml_model.cleanup()
 
 
@@ -79,7 +73,6 @@ app = FastAPI(lifespan=lifespan)
 async def generate_response_with_timeout(messages: List[ChatMessage]) -> str:
     try:
         response = await asyncio.to_thread(ml_model.generate_response, messages)
-        
         return response
         
     except Exception as e:
@@ -141,53 +134,31 @@ async def chat(message: Message, session_id: Optional[str] = None):
     try:
         await cleanup_old_sessions()
         
-        if not session_id or session_id not in chat_histories:
+        if not session_id:
             session_id = str(uuid.uuid4())
             logger.info(f"Создание новой сессии: {session_id}")
-            
-            # Создаем системный промпт отдельно
-            system_prompt = ChatMessage(
-                role="system",
-                content="""You are a public relations manager at Chelyabinsk State University. 
-                        Your task is:
-                        1. Answer questions about the university and its programs
-                        2. Use mainly Russian language
-                        3. Be polite and professional
-                        4. Provide accurate information
-                        5. If necessary, clarify the details of the issue
-                        
-                        Response format:
-                        - Do not use the prefixes 'user:' or 'bot:'
-                        - Respond in a structured way
-                        - Use the official communication style
-                        - Do not repeat the same information
-                        - Do not return the information do you get from the user
-                        """
-            )
-            
-            # Инициализируем историю чата только с системным промптом
-            chat_histories[session_id] = ChatHistory(
-                messages=[system_prompt],
-                session_id=session_id
-            )
+            history = ChatHistoryForModel(messages=[], session_id=session_id)
+            model_histories[session_id] = history
+        else:
+            history = model_histories.get(session_id)
+            if not history:
+                history = ChatHistoryForModel(messages=[], session_id=session_id)
+                model_histories[session_id] = history
         
-        history = chat_histories[session_id]
         logger.info(f"Количество сообщений в истории: {len(history.messages)}")
-        print(history.messages)
         history.update_activity()
         
         # Добавляем сообщение пользователя
         user_message = ChatMessage(role="user", content=message.text)
         history.messages.append(user_message)
-        
+        print(history.messages)
         # Генерируем ответ
-        response = await generate_response_with_timeout(history.messages)
-        
-        # Добавляем только ответ ассистента в историю
+        response = await ml_model.generate_response(history.messages)
+        # Добавляем сообщение пользователя
+        # Добавляем ответ ассистента в историю
         assistant_message = ChatMessage(role="assistant", content=response)
         history.messages.append(assistant_message)
-        
-        # Возвращаем только последний ответ
+        # Генерируем ответ
         return {
             "response": response,
             "session_id": session_id
