@@ -117,45 +117,33 @@ button:hover {
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
-
 .news-item {
     display: flex;
-    flex-direction: row;
-    margin-bottom: 20px;
+    flex-direction: column; /* Вертикальное расположение элементов */
     border-bottom: 1px solid #ddd;
-    padding-bottom: 10px;
+    padding-bottom: 15px;
+    text-align: center; /* Центрируем текст */
 }
 
 .news-image {
-    width: 150px;
-    height: 150px;
+    width: 100%; /* Картинка занимает всю ширину контейнера */
+    height: auto; /* Сохраняем пропорции */
     object-fit: cover;
     border-radius: 8px;
-    margin-right: 20px;
-}
-
-.news-content {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-}
-
-.news-container {
-    padding: 5px 5px 5px 10px;
+    margin-bottom: 10px; /* Отступ снизу */
 }
 
 .news-title {
     font-weight: bold;
-    padding: 0;
+    font-size: 24px;
+    margin: 15px 0 15px 0; /* Отступы вокруг заголовка */
 }
 
 .news-text {
     padding: 5px;
-}
-
-.news-description {
-    color: #777;
-    margin-top: 10px;
+    color: #555;
+    font-size: 14px;
+    line-height: 1.5;
 }
 
 
