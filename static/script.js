@@ -4,31 +4,27 @@ document.addEventListener('DOMContentLoaded', function() {
         .then(news => {
             const newsList = document.querySelector('.news-list');
             news.forEach(item => {
-                const listItem = document.createElement('li');
-                listItem.classList.add('news-item');
+             const listItem = document.createElement('li');
+                    listItem.classList.add('news-item');
 
-                const image = document.createElement('img');
-                image.src = item.relate_image_link;
-                image.alt = 'News Image';
-                image.classList.add('news-image');
+                    const image = document.createElement('img');
+                    image.src = item.relate_image_link;
+                    image.alt = 'News Image';
+                    image.classList.add('news-image');
 
-                const container = document.createElement('div');
-                container.classList.add('news-container');
+                    const title = document.createElement('p');
+                    title.classList.add('news-title');
+                    title.textContent = item.title;
 
-                const title = document.createElement('p');
-                title.classList.add('news-title');
-                title.textContent = item.title;
+                    const text = document.createElement('div');
+                    text.classList.add('news-text');
+                    text.textContent = item.description;
 
-                const text = document.createElement('div');
-                text.classList.add('news-text');
-                text.textContent = item.description;
+                    listItem.appendChild(title); // Затем заголовок
+                    listItem.appendChild(image);  // Картинка сверху
+                    listItem.appendChild(text);  // Затем описание
 
-                listItem.appendChild(image);
-                listItem.appendChild(container);
-                container.appendChild(title);
-                container.appendChild(text);
-
-                newsList.appendChild(listItem);
+                    newsList.appendChild(listItem);
             });
         })
         .catch(error => console.error('Error fetching news:', error));
@@ -91,8 +87,12 @@ function addMessage(sender, message) {
     if (sender === 'system') {
         return;
     }
-    
-    messageElement.textContent = message;
+
+    ownerMessage = "Вы: "
+    if(sender == 'bot')
+        ownerMessage = "ЧелгуБот: "
+
+    messageElement.textContent = ownerMessage + message;
     messageElement.className = `message ${sender}-message`;
     chatHistory.appendChild(messageElement);
     chatHistory.scrollTop = chatHistory.scrollHeight;
