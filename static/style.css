@@ -85,9 +85,18 @@ button:hover {
     margin-bottom: 10px;
 }
 
-.chat-input {
-    display: flex;
+.chat-input{
+     display: flex;
     gap: 10px;
+    resize: none; /* Запрещает изменять размер textarea вручную */
+}
+
+.chat-text-area {
+    overflow: hidden; /* Скрывает скроллбары */
+    box-sizing: border-box; /* Включает padding и border в общую ширину и высоту */
+    padding: 5px; /* Добавляет отступы */
+    border: 1px solid #ccc; /* Добавляет границу */
+    border-radius: 4px; /* Закругляет углы */
 }
 
 textarea {

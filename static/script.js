@@ -32,7 +32,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
 const chatHistory = document.getElementById('chat-history');
-const chatInput = document.getElementById('chat-input');
+const chatInput = document.getElementById('chat-text-area');
 const sendButton = document.getElementById('send-button');
 
 let currentSessionId = null;
@@ -104,7 +104,7 @@ function addMessage(sender, message) {
     chatHistory.scrollTop = chatHistory.scrollHeight;
 
     // Очищаем текстовое поле после отправки
-    document.getElementById('chat-input').value = '';
+    document.getElementById('chat-text-area').value = '';
 }
 
 
