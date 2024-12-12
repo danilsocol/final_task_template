@@ -88,15 +88,25 @@ function addMessage(sender, message) {
         return;
     }
 
-    ownerMessage = "Вы: "
-    if(sender == 'bot')
-        ownerMessage = "ЧелгуБот: "
+    // Определяем, кто отправил сообщение
+    let ownerMessage = "Вы: ";
+    if (sender === 'bot') {
+        ownerMessage = "ЧелгуБот: ";
+    }
 
-    messageElement.textContent = ownerMessage + message;
+    // Заменяем символы новой строки на <br>
+    const formattedMessage = message.replace(/\n/g, '<br>');
+
+    // Добавляем сообщение в элемент
+    messageElement.innerHTML = ownerMessage + formattedMessage;
     messageElement.className = `message ${sender}-message`;
     chatHistory.appendChild(messageElement);
     chatHistory.scrollTop = chatHistory.scrollHeight;
+
+    // Очищаем текстовое поле после отправки
+    document.getElementById('chat-input').value = '';
 }
+
 
 const searchButton = document.getElementById('search-button');
 const searchInput = document.getElementById('search-input');

@@ -25,15 +25,6 @@ body {
     padding: 20px;
 }
 
-.chat-container {
-    background-color: #fff;
-    padding: 20px;
-    border-top: 1px solid #ccc;
-    display: flex;
-    flex-direction: column;
-    flex-grow: 1;
-    max-height: 44vh;
-}
 
 .search-container {
     background-color: #fff;
@@ -76,6 +67,16 @@ button:hover {
     background-color: #0056b3;
 }
 
+.chat-container {
+    background-color: #fff;
+    padding: 20px;
+    border-top: 1px solid #ccc;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    max-height: 44vh;
+}
+
 .chat-history {
     flex-grow: 1;
     overflow-y: scroll;
@@ -89,6 +90,11 @@ button:hover {
     gap: 10px;
 }
 
+textarea {
+    width: 100%; /* Занимает всю ширину */
+    resize: none; /* Отключаем возможность изменения размера */
+    padding: 10px; /* Отступы внутри текстового поля */
+}
 .search-results {
     margin-top: 20px;
     padding: 10px;
