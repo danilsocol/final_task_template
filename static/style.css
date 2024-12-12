@@ -88,21 +88,21 @@ button:hover {
 .chat-input{
      display: flex;
     gap: 10px;
-    resize: none; /* Запрещает изменять размер textarea вручную */
+    resize: none;
 }
 
 .chat-text-area {
-    overflow: hidden; /* Скрывает скроллбары */
-    box-sizing: border-box; /* Включает padding и border в общую ширину и высоту */
-    padding: 5px; /* Добавляет отступы */
-    border: 1px solid #ccc; /* Добавляет границу */
-    border-radius: 4px; /* Закругляет углы */
+    overflow: hidden;
+    box-sizing: border-box;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
 }
 
 textarea {
-    width: 100%; /* Занимает всю ширину */
-    resize: none; /* Отключаем возможность изменения размера */
-    padding: 10px; /* Отступы внутри текстового поля */
+    width: 100%;
+    resize: none;
+    padding: 10px;
 }
 .search-results {
     margin-top: 20px;
