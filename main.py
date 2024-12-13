@@ -79,8 +79,8 @@ async def generate_response_with_timeout(messages: List[ChatMessage]) -> str:
         logger.error(f"Ошибка при генерации ответа: {str(e)}")
         raise HTTPException(status_code=500, detail=str(e))
 
-chat_histories: Dict[str, ChatHistory] = {}  # История для UI
-model_histories: Dict[str, ChatHistoryForModel] = {}  # История для модели
+chat_histories: Dict[str, ChatHistory] = {} 
+model_histories: Dict[str, ChatHistoryForModel] = {} 
 
 async def cleanup_old_sessions():
     current_time = datetime.now()
@@ -148,17 +148,12 @@ async def chat(message: Message, session_id: Optional[str] = None):
         logger.info(f"Количество сообщений в истории: {len(history.messages)}")
         history.update_activity()
         
-        # Добавляем сообщение пользователя
         user_message = ChatMessage(role="user", content=message.text)
         history.messages.append(user_message)
         print(history.messages)
-        # Генерируем ответ
         response = await ml_model.generate_response(history.messages)
-        # Добавляем сообщение пользователя
-        # Добавляем ответ ассистента в историю
         assistant_message = ChatMessage(role="assistant", content=response)
         history.messages.append(assistant_message)
-        # Генерируем ответ
         return {
             "response": response,
             "session_id": session_id
@@ -182,10 +177,9 @@ if __name__ == "__main__":
             finally:
                 parser.driver.quit()
     
-    # Запускаем парсер в отдельном потоке
+
     with ThreadPoolExecutor() as executor:
         parser_future = executor.submit(run_parser)
         
-        # Запускаем FastAPI сервер в основном потоке
         import uvicorn
         uvicorn.run(app, host="0.0.0.0", port=8000)

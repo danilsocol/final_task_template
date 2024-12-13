@@ -89,8 +89,8 @@ class MLModel:
                 outputs = self.model.generate(
                     inputs,
                     attention_mask=attention_mask,
-                    max_new_tokens=50,  # Ограничиваем длину запроса
-                    temperature=0.3,    # Делаем генерацию более детерминированной
+                    max_new_tokens=30,  # Ограничиваем длину запроса
+                    temperature=0.1,    # Делаем генерацию более детерминированной
                     top_p=0.9,
                     do_sample=True,
                     pad_token_id=self.tokenizer.pad_token_id,
@@ -110,17 +110,15 @@ class MLModel:
 
     async def get_search_context(self, user_message: str) -> str:
         try:
-            # Генерируем поисковый запрос
             search_query = await self.generate_search_query(user_message)
-            
-            # Получаем результаты поиска
             xml = fetch_yandex_search_results(search_query)
             results = parse_xml_data(xml)
             
-            # Форматируем результаты в контекст
             context = "Релевантные источники:\n"
-            for result in results[:3]:  # Берем только топ-3 результата
-                context += f"- {result['title']}\n  Ссылка: {result['url']}\n"
+            for result in results[:3]:
+                # Очищаем URL от пробелов и лишних символов
+                clean_url = result['url'].strip().replace(" ", "")
+                context += f"- {result['title']}\n  Ссылка: {clean_url}\n"
                 if result['headline']:
                     context += f"  Краткое содержание: {result['headline']}\n"
             
@@ -185,7 +183,7 @@ class MLModel:
             
             # Добавляем релевантные источники к ответу
             final_response = f"{response.strip()}\n{search_context}"
-            
+            print(f'Что должен видеть пользователь: {final_response}')
             return final_response
                 
         except Exception as e:
